@@ -13,3 +13,4 @@ old_files/filtered_data.pkl
 old_files/filtered_dataset.pkl
 data/*
 GraphWriter/*
+
