@@ -12,3 +12,5 @@ old_files/dataset.pkl
 old_files/filtered_data.pkl
 old_files/filtered_dataset.pkl
 data/*
+GraphWriter/data/*
+GraphWriter/pycocoevalcup/*

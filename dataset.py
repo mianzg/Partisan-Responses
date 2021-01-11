@@ -657,7 +657,8 @@ class Annotation():
             label2tokenidx[i] = {}
             for ent in ner:
                 label = ent[0]
-                ent_type, charstart, charend = tuple(ent[1].split())
+                ent_split = ent[1].split()
+                ent_type, charstart, charend = tuple([ent_split[0], ent_split[1], ent_split[-1]])
                 charstart, charend = int(charstart), int(charend)
                 for span in sent:
                     if span[0]<= charstart and charstart < span[1]:
@@ -708,10 +709,18 @@ class Annotation():
         return jsonlines
 
 if __name__ == "__main__":
-    annotation = Annotation(folder="newsconf_coref")
+    annotation = Annotation(folder="newsconf_done")
     jsonlines = annotation.preprocess_brat()
-    with open("./train.json", "w") as f:
-        f.writelines(jsonlines)
+    train, dev = train_test_split(jsonlines, test_size=0.3, random_state=0)
+    dev, test = train_test_split(jsonlines, test_size=0.34, random_state=0)
+    if not os.path.exists("./data/scierc/"):
+        os.makedirs("./data/scierc/")
+    with open("./data/scierc/train.json", "w") as f:
+        f.writelines(train)
+    with open("./data/scierc/dev.json", "w") as f:
+        f.writelines(dev)
+    with open("./data/scierc/test.json", "w") as f:
+        f.writelines(test)
 """
 if __name__ == "__main__":
     conf = NewsConference()
