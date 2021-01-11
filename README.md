@@ -1,21 +1,25 @@
 # Partisan-Responses
-Project for the class "Introduction of Natural Language Processing (Fall 2020)", an extension to a previous course project(see commit ). 
+Project for the class "Introduction of Natural Language Processing (Fall 2020)"
+
 ## Dataset (in-progress)
 - [Presidency Project](https://www.presidency.ucsb.edu/)
   - [News Conference](https://www.presidency.ucsb.edu/documents/app-categories/presidential/news-conferences)  
 - [Gallup Topic Questions](https://news.gallup.com/poll/trends.aspx#P)
+
 ## Usage
 Clone the repository and Install Anaconda, then create a conda environment for this project and retrieve datasets.
 ```{bash}
-
+conda create -n 
 ```
+## Dataset
 
 ## Models
 ### GPT-2 (Baseline)
 
 ### GraphWriter (naive)
 
-### GraphWriter
+### GraphWriter (using scierc)
+
 ### Pipeline
 raw text -> coreference resolution -> annotation (entities and relations) -> Train NER (with spacy) -> Train semantic relation extraction(SRE)(not sure...) -> KG 
 
