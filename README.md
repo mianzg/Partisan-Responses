@@ -4,27 +4,31 @@ Project for the class "Introduction of Natural Language Processing (Fall 2020)"
 ## Dataset (in-progress)
 - [Presidency Project](https://www.presidency.ucsb.edu/)
   - [News Conference](https://www.presidency.ucsb.edu/documents/app-categories/presidential/news-conferences)  
-- [Gallup Topic Questions](https://news.gallup.com/poll/trends.aspx#P)
+- [Gallup Public Opinion Questions categorized by topics](https://news.gallup.com/poll/trends.aspx#P)
 
 ## Usage
 Clone the repository and Install Anaconda, then create a conda environment for this project and retrieve datasets.
 ```{bash}
 conda create -n 
 ```
-## Dataset
-
+### Acquire Dataset
+You can directly download the data folder from [THIS LINK](), and put it under this repository. Otherwise, data come from various sources, and the following provides how I scrape and coarsely process them:
+#### News Conference Data (Presidency Project)
+```
+```
+#### Gallup Questions
+```
+python Questions.py
+```
 ## Models
 ### GPT-2 (Baseline)
 
 ### GraphWriter (naive)
 
+### SCIERC
+
 ### GraphWriter (using scierc)
 
-### Pipeline
-raw text -> coreference resolution -> annotation (entities and relations) -> Train NER (with spacy) -> Train semantic relation extraction(SRE)(not sure...) -> KG 
-
-## Run the code
-Follow through the numbered notebooks. Starting at 06 only the dataset from all speeches since 2000 gets executed.
 ## Important papers
 Building Knowledge Graph
 - [Opinion-aware Knowledge Graph for Political Ideology Detection](https://www.ijcai.org/Proceedings/2017/0510.pdf)
