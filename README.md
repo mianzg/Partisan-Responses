@@ -12,16 +12,21 @@ Clone the repository and Install Anaconda, then create a conda environment for t
 conda create -n 
 ```
 ### Acquire Dataset
-You can directly download the data folder from [THIS LINK](), and put it under this repository. Otherwise, data come from various sources, and the following provides how I scrape and coarsely process them:
+**RECOMMENDED**: You can directly download the data folder from [THIS LINK](), and put it under this repository. 
+
+Otherwise, data come from various sources, and the following provides how I scrape and coarsely process them:
 #### News Conference Data (Presidency Project)
+It will either load or scrape news conference from the website, then split by democratic and replican. Under each party, the dataset is split into train, validation and test datasets. 
 ```
+python dataset.py
 ```
+Now under `data/presidency_project/newsconference/`, we should have `dem_train.csv`, `dem_val.csv`, `dem_test.csv`, `rep_train.csv`, `rep_val.csv` and `rep_test.csv`. These six files serve the start to further pre-process needed input files for the following models. The baseline model gpt-2 will directly use these files, and moreover, the above command also creates input files for vanilla GraphWriter under `data/presidency_project/newsconference/gwnaive/`
 #### Gallup Questions
 ```
 python Questions.py
 ```
 ## Models
-### GPT-2 (Baseline)
+### Finetuned GPT-2 (Baseline)
 
 ### GraphWriter (naive)
 
