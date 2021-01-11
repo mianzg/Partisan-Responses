@@ -211,7 +211,7 @@ class PresidencyProject:
         df = df[df.party==party]
         train, test = train_test_split(df, test_size=0.2, random_state=0)
         train, val = train_test_split(train, test_size=0.125, random_state=0)
-        direc = "data/presidency_project/newsconference"
+        direc = self.direc 
         prefix = party.lower()[:3]
         print("{}:\nTrain Size: {}\nValidation Size: {}\nTest Size: {}\n".format(party, train.shape[0], val.shape[0], test.shape[0]))
         
@@ -239,20 +239,7 @@ class PresidencyProject:
                     f.write("\n")
                 with open(annf, 'w') as f:
                     f.write("")
-    '''
-    def write_json(self, df, save_path):
-        result = []
-        for i in range(df.shape[0]):
-            sample = df.iloc[i]
-            unprocessed_sample = {"question": sample.question, 
-                        "entities":[], 
-                        "types": None, 
-                        "relations": [], 
-                        "answer":None, 
-                        "answer_og": sample.answer}
-            result.append(sample)
-        json.dump(result, save_path)
-    '''
+   
 
     def write_gw_input(self, input_data, output_direc, output_file):
         if type(input_data) is str:
@@ -708,25 +695,16 @@ class Annotation():
             jsonlines.append(row+"\n")
         return jsonlines
 
+
 if __name__ == "__main__":
-    annotation = Annotation(folder="newsconf_done")
-    jsonlines = annotation.preprocess_brat()
-    train, dev = train_test_split(jsonlines, test_size=0.3, random_state=0)
-    dev, test = train_test_split(jsonlines, test_size=0.34, random_state=0)
-    if not os.path.exists("./data/scierc/"):
-        os.makedirs("./data/scierc/")
-    with open("./data/scierc/train.json", "w") as f:
-        f.writelines(train)
-    with open("./data/scierc/dev.json", "w") as f:
-        f.writelines(dev)
-    with open("./data/scierc/test.json", "w") as f:
-        f.writelines(test)
-"""
-if __name__ == "__main__":
+    # Load or scrape news conference from web
     conf = NewsConference()
     filename = "./data/presidency_project/newsconference/newsconference_2157_201229.csv"
     df = conf.load_data(filename)
+
+    # Split data
     for party in set(df.party):
+        # General (e.g gpt-2)
         train, val, test = conf.split_data(df, party)
         # GW naive
         gwnaive_direc = "./data/presidency_project/newsconference/gwnaive/{}".format(party)
@@ -741,4 +719,18 @@ if __name__ == "__main__":
         print("Write vocabulary\n")
         with open(os.path.join(gwnaive_direc,'relations.vocab'), 'w') as vocabfile:
             vocabfile.writelines("%s\n" % verb.upper() for verb in verb_list)
-"""
+
+    # TODO: create annotation files from saved names
+    
+    annotation = Annotation(folder="newsconf_done")
+    jsonlines = annotation.preprocess_brat()
+    train, dev = train_test_split(jsonlines, test_size=0.3, random_state=0)
+    dev, test = train_test_split(jsonlines, test_size=0.34, random_state=0)
+    if not os.path.exists("./data/scierc/"):
+        os.makedirs("./data/scierc/")
+    with open("./data/scierc/train.json", "w") as f:
+        f.writelines(train)
+    with open("./data/scierc/dev.json", "w") as f:
+        f.writelines(dev)
+    with open("./data/scierc/test.json", "w") as f:
+        f.writelines(test)
