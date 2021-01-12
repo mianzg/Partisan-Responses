@@ -25,16 +25,45 @@ Now under `data/presidency_project/newsconference/`, we should have `dem_train.c
 ```
 python Questions.py
 ```
+So far, under the `data/` directory, we should have the following structure:
+```
+TODO
+```
+
 ## Models
 ### Finetuned GPT-2 (Baseline)
 
 ### GraphWriter (naive)
-
-### SCIERC
-
-### GraphWriter (using scierc)
-Use trained NER-Relation Model to process files for graphwriter's input on ETHZ Leonhard
 ```
+# To Start
+## Democratic
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir ../data/gwnaive/Democratic/ -save ../output/gwnaive/Democratic/ -esz 256 -hsz 256"
+## Republican
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python train.py -bsz 4 -t1size 4 -t2size 2 -t3size 1 -datadir ../data/gwnaive/Republican/ -save ../output/gwnaive/Republican/ -esz 256 -hsz 256"
+
+# The training usually takes more than one job, then you need to follow up with last checkpoint you have, e.g, last checkpoint is 9th epoch (0-indexing)
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir ../data/presidency_project/newsconference/gwnaive/Democratic/ -save ../output/gwnaive/Democratic/ -ckpt ../output/gwnaive/Democratic/8.vloss-3.715168.lr-0.1 -esz 256 -hsz 256"
+```
+### SCIERC
+```
+cd scierc
+scripts/.sh
+scripts/.sh
+```
+To train and validate on annotated data over Leonhard cluster
+```
+bsub -W 02:00 -N -R "rusage[mem=20480, ngpus_excl_p=4]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" < run_scierc.sh 
+```
+Use the best trained NER-Relation model to automatically annotate over train, val and test to generate input data for GraphWriter
+```
+python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/train.json -outfn ./data/scierc_predict/dem/train.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/val.json -outfn ./data/scierc_predict/dem/dev.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/test.json -outfn ./data/scierc_predict/dem/test.hdf5
+
+python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/train.json -outfn ./data/scierc_predict/rep/train.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/val.json -outfn ./data/scierc_predict/rep/dev.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/test.json -outfn ./data/scierc_predict/rep/test.hdf5
+
 #republican train
 bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/train.hdf5 --eval_path ./data/scierc_predict/rep/train.json --questions ./data/scierc_predict/rep/train_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.train.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/train_ckpt.txt'
 
@@ -52,6 +81,10 @@ bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --l
 
 # democratic test
 bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/test.hdf5 --eval_path ./data/scierc_predict/dem/test.json --questions ./data/scierc_predict/dem/test_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.test.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/test_ckpt.txt'
+```
+
+### GraphWriter (using scierc)
+```
 ```
 
 ## Important papers
