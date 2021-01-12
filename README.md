@@ -36,19 +36,22 @@ python Questions.py
 Use trained NER-Relation Model to process files for graphwriter's input on ETHZ Leonhard
 ```
 #republican train
-bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/train.hdf5 --eval_path ./data/scierc_predict/rep/train.json --questions ./data/scierc_predict/rep/train_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.train.tsv --batch_size 128 --ckpt ./data/scierc_predict/rep/train_ckpt.txt'
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/train.hdf5 --eval_path ./data/scierc_predict/rep/train.json --questions ./data/scierc_predict/rep/train_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.train.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/train_ckpt.txt'
 
 # republican validation
-bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/dev.hdf5 --eval_path ./data/scierc_predict/rep/val.json --questions ./data/scierc_predict/rep/val_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.val.tsv --batch_size 128 --ckpt ./data/scierc_predict/rep/val_ckpt.txt'
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/dev.hdf5 --eval_path ./data/scierc_predict/rep/val.json --questions ./data/scierc_predict/rep/val_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.val.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/val_ckpt.txt'
 
 # republican test
-bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/test.hdf5 --eval_path ./data/scierc_predict/rep/test.json --questions ./data/scierc_predict/rep/test_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.test.tsv --batch_size 128 --ckpt ./data/scierc_predict/rep/test_ckpt.txt'
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/test.hdf5 --eval_path ./data/scierc_predict/rep/test.json --questions ./data/scierc_predict/rep/test_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.test.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/test_ckpt.txt'
+
+# democratic train
+bsub -n 8 -N -R "rusage[mem=5000]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/train.hdf5 --eval_path ./data/scierc_predict/dem/train.json --questions ./data/scierc_predict/dem/train_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.train.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/train_ckpt.txt'
 
 # democratic validation
-bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/dev.hdf5 --eval_path ./data/scierc_predict/dem/val.json --questions ./data/scierc_predict/dem/val_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.val.tsv --batch_size 128 --ckpt ./data/scierc_predict/dem/val_ckpt.txt'
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/dev.hdf5 --eval_path ./data/scierc_predict/dem/val.json --questions ./data/scierc_predict/dem/val_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.val.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/val_ckpt.txt'
 
 # democratic test
-bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/test.hdf5 --eval_path ./data/scierc_predict/dem/test.json --questions ./data/scierc_predict/dem/test_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.test.tsv --batch_size 128 --ckpt ./data/scierc_predict/dem/test_ckpt.txt'
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/test.hdf5 --eval_path ./data/scierc_predict/dem/test.json --questions ./data/scierc_predict/dem/test_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.test.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/test_ckpt.txt'
 ```
 
 ## Important papers
