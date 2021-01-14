@@ -10,6 +10,8 @@ Project for the class "Introduction of Natural Language Processing (Fall 2020)"
 Clone the repository and Install Anaconda, then create a conda environment for this project and retrieve datasets.
 ```{bash}
 conda create -n 
+conda activate 
+module load cuda/10.0.130 cudnn/7.5
 ```
 ### Acquire Dataset
 **RECOMMENDED**: You can directly download the data folder from [THIS LINK](), and put it under this repository. 
@@ -95,6 +97,14 @@ bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==T
 python ./GraphWriter/train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir './data/gw_scierc/dem/' -save './gw_scierc_models/dem_lr0.01_256/' -ent_type 'Actor Implementation Institution Achievement OtherPolitical' -esz 256 -hsz 256 -lr 0.01
 
 ```
+## Generation
+### GPT-2
+```
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=8]" "python gpt2.py --test ./data/presidency_project/newsconference/dem_test.csv --party Democratic --outfn ./generation/gpt2/dem/dem_test_predict.txt"
+
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=8]" "python gpt2.py --test ./data/presidency_project/newsconference/rep_test.csv --party Republican --outfn ./generation/gpt2/rep/rep_test_predict.txt"
+```
+### 
 
 ## Important papers
 Building Knowledge Graph
