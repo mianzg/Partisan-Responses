@@ -85,6 +85,15 @@ bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --l
 
 ### GraphWriter (using scierc)
 ```
+###### LR 0.01 Embedding size 256 Hidden size 256 ######
+# republican
+bsub -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python ./GraphWriter/train.py -bsz 4 -t1size 4 -t2size 2 -t3size 1 -datadir './data/gw_scierc/rep/' -save './gw_scierc_models/rep_lr0.01_256/' -ent_type 'Actor Implementation Institution Achievement OtherPolitical' -esz 256 -hsz 256 -lr 0.01 -ckpt './gw_scierc_models/rep_lr0.01_256/15.vloss-3.703604.lr-0.01'"
+
+
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python ./GraphWriter/train.py -bsz 4 -t1size 4 -t2size 2 -t3size 1 -datadir './data/gw_scierc/rep/' -save './gw_scierc_models/rep/' -ent_type 'Actor Implementation Institution Achievement OtherPolitical'"
+
+python ./GraphWriter/train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir './data/gw_scierc/dem/' -save './gw_scierc_models/dem_lr0.01_256/' -ent_type 'Actor Implementation Institution Achievement OtherPolitical' -esz 256 -hsz 256 -lr 0.01
+
 ```
 
 ## Important papers
