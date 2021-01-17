@@ -10,6 +10,8 @@ Project for the class "Introduction of Natural Language Processing (Fall 2020)"
 Clone the repository and Install Anaconda, then create a conda environment for this project and retrieve datasets.
 ```{bash}
 conda create -n 
+conda activate 
+module load cuda/10.0.130 cudnn/7.5
 ```
 ### Acquire Dataset
 **RECOMMENDED**: You can directly download the data folder from [THIS LINK](), and put it under this repository. 
@@ -25,14 +27,84 @@ Now under `data/presidency_project/newsconference/`, we should have `dem_train.c
 ```
 python Questions.py
 ```
+So far, under the `data/` directory, we should have the following structure:
+```
+TODO
+```
+
 ## Models
 ### Finetuned GPT-2 (Baseline)
 
 ### GraphWriter (naive)
+```
+# To Start
+## Democratic
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir ../data/gwnaive/Democratic/ -save ../output/gwnaive/Democratic/ -esz 256 -hsz 256"
+## Republican
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python train.py -bsz 4 -t1size 4 -t2size 2 -t3size 1 -datadir ../data/gwnaive/Republican/ -save ../output/gwnaive/Republican/ -esz 256 -hsz 256"
 
+# The training usually takes more than one job, then you need to follow up with last checkpoint you have, e.g, last checkpoint is 9th epoch (0-indexing)
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir ../data/presidency_project/newsconference/gwnaive/Democratic/ -save ../output/gwnaive/Democratic/ -ckpt ../output/gwnaive/Democratic/8.vloss-3.715168.lr-0.1 -esz 256 -hsz 256"
+```
 ### SCIERC
+```
+cd scierc
+scripts/.sh
+scripts/.sh
+```
+To train and validate on annotated data over Leonhard cluster
+```
+bsub -W 02:00 -N -R "rusage[mem=20480, ngpus_excl_p=4]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" < run_scierc.sh 
+```
+Use the best trained NER-Relation model to automatically annotate over train, val and test to generate input data for GraphWriter
+```
+python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/train.json -outfn ./data/scierc_predict/dem/train.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/val.json -outfn ./data/scierc_predict/dem/dev.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/test.json -outfn ./data/scierc_predict/dem/test.hdf5
+
+python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/train.json -outfn ./data/scierc_predict/rep/train.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/val.json -outfn ./data/scierc_predict/rep/dev.hdf5
+python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/test.json -outfn ./data/scierc_predict/rep/test.hdf5
+
+#republican train
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/train.hdf5 --eval_path ./data/scierc_predict/rep/train.json --questions ./data/scierc_predict/rep/train_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.train.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/train_ckpt.txt'
+
+# republican validation
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/dev.hdf5 --eval_path ./data/scierc_predict/rep/val.json --questions ./data/scierc_predict/rep/val_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.val.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/val_ckpt.txt'
+
+# republican test
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/test.hdf5 --eval_path ./data/scierc_predict/rep/test.json --questions ./data/scierc_predict/rep/test_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.test.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/test_ckpt.txt'
+
+# democratic train
+bsub -n 8 -N -R "rusage[mem=5000]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/train.hdf5 --eval_path ./data/scierc_predict/dem/train.json --questions ./data/scierc_predict/dem/train_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.train.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/train_ckpt.txt'
+
+# democratic validation
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/dev.hdf5 --eval_path ./data/scierc_predict/dem/val.json --questions ./data/scierc_predict/dem/val_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.val.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/val_ckpt.txt'
+
+# democratic test
+bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/test.hdf5 --eval_path ./data/scierc_predict/dem/test.json --questions ./data/scierc_predict/dem/test_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.test.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/test_ckpt.txt'
+```
 
 ### GraphWriter (using scierc)
+```
+###### LR 0.01 Embedding size 256 Hidden size 256 ######
+# republican
+bsub -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python ./GraphWriter/train.py -bsz 4 -t1size 4 -t2size 2 -t3size 1 -datadir './data/gw_scierc/rep/' -save './gw_scierc_models/rep_lr0.01_256/' -ent_type 'Actor Implementation Institution Achievement OtherPolitical' -esz 256 -hsz 256 -lr 0.01 -ckpt './gw_scierc_models/rep_lr0.01_256/15.vloss-3.703604.lr-0.01'"
+
+
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python ./GraphWriter/train.py -bsz 4 -t1size 4 -t2size 2 -t3size 1 -datadir './data/gw_scierc/rep/' -save './gw_scierc_models/rep/' -ent_type 'Actor Implementation Institution Achievement OtherPolitical'"
+
+python ./GraphWriter/train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir './data/gw_scierc/dem/' -save './gw_scierc_models/dem_lr0.01_256/' -ent_type 'Actor Implementation Institution Achievement OtherPolitical' -esz 256 -hsz 256 -lr 0.01
+
+```
+## Generation
+### GPT-2
+```
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=8]" "python gpt2.py --test ./data/presidency_project/newsconference/dem_test.csv --party Democratic --outfn ./generation/gpt2/dem/dem_test_predict.txt"
+
+bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=8]" "python gpt2.py --test ./data/presidency_project/newsconference/rep_test.csv --party Republican --outfn ./generation/gpt2/rep/rep_test_predict.txt"
+```
+### 
 
 ## Important papers
 Building Knowledge Graph

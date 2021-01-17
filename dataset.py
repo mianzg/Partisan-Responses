@@ -240,7 +240,6 @@ class PresidencyProject:
                 with open(annf, 'w') as f:
                     f.write("")
    
-
     def write_gw_input(self, input_data, output_direc, output_file):
         if type(input_data) is str:
             df = pd.read_csv(input_data)
@@ -273,6 +272,26 @@ class PresidencyProject:
         pickle.dump(verb_dict, open(verb_dict_path, 'wb'))
         pickle.dump(verb_list, open(verb_list_path, 'wb'))
         return verb_list
+    
+    def write_to_scierc_predict(self, input_data):
+        if type(input_data) is str:
+            df = pd.read_csv(input_data)
+        else:
+            df = input_data
+        print(f"Process {df.shape[0]} data ...")
+        jsonlines = []
+        questions = []
+        for i in range(df.shape[0]):
+            twt = nltk.tokenize.TreebankWordTokenizer()
+            questions.append(df.question.iloc[i].replace("\n", " ")+"\n")
+            sentences = [twt.tokenize(sent) for sent in nltk.sent_tokenize(str(df.answer.iloc[i]))]
+            doc_key = "{}_{}".format(df.id.iloc[i], i)
+            row = {"clusters":[], "sentences":sentences, "doc_key": doc_key}
+            row = json.dumps(row)
+            jsonlines.append(row+"\n")
+        assert len(questions) == len(jsonlines)
+        print(f"Finished writing {len(questions)} questions and {len(jsonlines)} scierc input")
+        return questions, jsonlines
 
 class NewsConference(PresidencyProject):
     """
@@ -694,19 +713,19 @@ class Annotation():
             row = json.dumps(row)
             jsonlines.append(row+"\n")
         return jsonlines
-
+    
 
 if __name__ == "__main__":
+    
     # Load or scrape news conference from web
     conf = NewsConference()
     filename = "./data/presidency_project/newsconference/newsconference_2157_201229.csv"
     df = conf.load_data(filename)
-
     # Split data
     for party in set(df.party):
         # General (e.g gpt-2)
         train, val, test = conf.split_data(df, party)
-        # GW naive
+        # GW NAIVE DATA
         gwnaive_direc = "./data/presidency_project/newsconference/gwnaive/{}".format(party)
         if not os.path.exists(gwnaive_direc):
             os.makedirs(gwnaive_direc)
@@ -719,13 +738,11 @@ if __name__ == "__main__":
         print("Write vocabulary\n")
         with open(os.path.join(gwnaive_direc,'relations.vocab'), 'w') as vocabfile:
             vocabfile.writelines("%s\n" % verb.upper() for verb in verb_list)
-
-    # TODO: create annotation files from saved names
-    
+    # POLIIE TRAINING DATA
     annotation = Annotation(folder="newsconf_done")
     jsonlines = annotation.preprocess_brat()
     train, dev = train_test_split(jsonlines, test_size=0.3, random_state=0)
-    dev, test = train_test_split(jsonlines, test_size=0.34, random_state=0)
+    dev, test = train_test_split(dev, test_size=0.34, random_state=2)
     if not os.path.exists("./data/scierc/"):
         os.makedirs("./data/scierc/")
     with open("./data/scierc/train.json", "w") as f:
@@ -734,3 +751,20 @@ if __name__ == "__main__":
         f.writelines(dev)
     with open("./data/scierc/test.json", "w") as f:
         f.writelines(test)
+    
+    # GW-POLIIE DATA
+    party = ["rep", "dem"]
+    types = ["train", "val", "test"]
+    for p in party:
+         for t in types:
+            input_data = os.path.join("./data/presidency_project/newsconference/", p+"_"+t+".csv")
+            questions, jsonlines = conf.write_to_scierc_predict(input_data)
+            if not os.path.exists(f"./data/scierc_predict/{p}/"):
+                os.makedirs(f"./data/scierc_predict/{p}")
+            with open(f"./data/scierc_predict/{p}/{t}.json", "w") as f:
+                f.writelines(jsonlines)
+            with open(f"./data/scierc_predict/{p}/{t}_questions.txt", "w") as f:
+                f.writelines(questions)
+
+
+    
