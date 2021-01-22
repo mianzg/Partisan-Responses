@@ -22,6 +22,7 @@ Otherwise, data come from various sources, and the following provides how I scra
 #### News Conference Data (Presidency Project)
 It will either load or scrape news conference data from the website, then split by democratic and replican. Under each party, the dataset is split into train, validation and test datasets. Then, it will prepare data for GraphWriter using Open Information Extraction. Lastly, it will prepare data for training PoliIE system
 ```
+python -m spacy download en_core_web_sm
 python dataset.py
 ```
 Now under `data/presidency_project/newsconference/`, we should have `dem_train.csv`, `dem_val.csv`, `dem_test.csv`, `rep_train.csv`, `rep_val.csv` and `rep_test.csv`. These six files serve the start to further pre-process needed input files for the following models. The baseline model gpt-2 will directly use these files. 
