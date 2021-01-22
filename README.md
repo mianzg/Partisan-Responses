@@ -38,7 +38,7 @@ TODO
 
 ## Models
 I suggest to use some computing resources with GPU to train each model. I have used Google Colab and Leonhard Cluster provided by ETH Zurich. 
-### Finetuned GPT-2 (Baseline)
+### Finetune GPT-2 (Baseline)
 ```
 # To Finetune and Generate with Fituned model
 python gpt2.py --test ./data/presidency_project/newsconference/rep_test.csv --party Republican --outfn ./generation/gpt2/rep/rep_test_predict.txt --only_gen False
@@ -48,7 +48,7 @@ python gpt2.py --test ./data/presidency_project/newsconference/dem_test.csv --pa
 # Check more information with
 python gpt2.py -h
 ```
-### GraphWriter (naive)
+### GraphWriter (Open Information Extraction)
 The training will take quite a long time, and only Tesla V100 fits the memory requirements. Therefore, I provided here a mini-guide when using ETHZ Leonhard to train the model. 
 ```
 # To Start
@@ -60,6 +60,7 @@ bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==T
 # The training usually takes more than one job, then you need to follow up with last checkpoint you have, e.g, last checkpoint is 9th epoch (0-indexing)
 bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=2]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" "python train.py -bsz 1 -t1size 1 -t2size 1 -t3size 1 -datadir ../data/presidency_project/newsconference/gwnaive/Democratic/ -save ../output/gwnaive/Democratic/ -ckpt ../output/gwnaive/Democratic/8.vloss-3.715168.lr-0.1 -esz 256 -hsz 256"
 ```
+
 ### PoliIE
 To set up the system, follow:
 ```
@@ -67,22 +68,25 @@ cd scierc
 scripts/fetch_required_data.sh
 scripts/build_custom_kernels.sh
 ```
+
 To train and validate on annotated data over Leonhard cluster
 ```
 bsub -W 02:00 -N -R "rusage[mem=20480, ngpus_excl_p=4]" -R "select[gpu_model0==TeslaV100_SXM2_32GB]" < run_scierc.sh 
 ```
 
-Use the best trained NER-Relation model to automatically annotate over train, val and test to generate input data for GraphWriter
+Use the best trained PoliIE model to automatically label political entities and relations over train, validation and test to generate input data for GraphWriter.
 ```
-# Democratic
+# GENERATE ELMO EMBEDDINGS
+### Democratic
 python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/train.json -outfn ./data/scierc_predict/dem/train.hdf5
 python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/val.json -outfn ./data/scierc_predict/dem/dev.hdf5
 python scierc/generate_elmo.py -fn ./data/scierc_predict/dem/test.json -outfn ./data/scierc_predict/dem/test.hdf5
-# Republican
+### Republican
 python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/train.json -outfn ./data/scierc_predict/rep/train.hdf5
 python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/val.json -outfn ./data/scierc_predict/rep/dev.hdf5
 python scierc/generate_elmo.py -fn ./data/scierc_predict/rep/test.json -outfn ./data/scierc_predict/rep/test.hdf5
 
+# RUN POLIIE
 #republican train
 bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/rep/train.hdf5 --eval_path ./data/scierc_predict/rep/train.json --questions ./data/scierc_predict/rep/train_questions.txt --outfn ./data/gw_scierc/rep/preprocessed.train.tsv --batch_size 128 --ckpt ./data/gw_scierc/rep/train_ckpt.txt'
 
@@ -102,7 +106,7 @@ bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --l
 bsub -n 8 -N -R "rusage[mem=2560]" 'python scierc/predict.py --expt partisan --lm_path_dev ./data/scierc_predict/dem/test.hdf5 --eval_path ./data/scierc_predict/dem/test.json --questions ./data/scierc_predict/dem/test_questions.txt --outfn ./data/gw_scierc/dem/preprocessed.test.tsv --batch_size 128 --ckpt ./data/gw_scierc/dem/test_ckpt.txt'
 ```
 
-### GraphWriter (using scierc)
+### GraphWriter (using PoliIE)
 ```
 ###### LR 0.01 Embedding size 256 Hidden size 256 ######
 # republican
