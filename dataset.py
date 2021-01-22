@@ -605,7 +605,7 @@ class Debate(PresidencyProject):
 #unique_start = {'BRIT HUME, FOX NEWS:', 'PARTICIPANTS:', 'WOLF BLITZER:', 'Participants:', 'Moderators:', 'TOM BROKAW:'}
 #unique_start = {'PARTICIPANTS:', 'ANNOUNCER:', 'Moderators:', 'COKIE ROBERTS:', 'Participants:'}
 class Annotation():
-    def __init__(self, folder, brat_datadir="./brat/data/"):
+    def __init__(self, folder, brat_datadir="./data/"):
         self.brat_datadir = brat_datadir
         self.folder = folder
 
@@ -726,7 +726,7 @@ if __name__ == "__main__":
         # General (e.g gpt-2)
         train, val, test = conf.split_data(df, party)
         # GW NAIVE DATA
-        gwnaive_direc = "./data/presidency_project/newsconference/gwnaive/{}".format(party)
+        gwnaive_direc = "./data/gwnaive/{}".format(party)
         if not os.path.exists(gwnaive_direc):
             os.makedirs(gwnaive_direc)
         # write processed data
