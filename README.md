@@ -130,3 +130,6 @@ bsub -W 04:00 -N -R "rusage[mem=20480, ngpus_excl_p=8]" "python gpt2.py --test .
 
 ## Colab
 For people without ETH Leonhard access, part of the work can also be run on Google Colab Service. Therefore, I provided some noteboooks here (TODO)
+1. [Model Training](https://colab.research.google.com/drive/1CRW-td0A7HTuw67ZXxmM8DgDHDuQs7IH?usp=sharing)
+2. [Text Generation](https://colab.research.google.com/drive/16d3NsXAO3vxKRHkCvjqj5hWu0g8VOgpE?usp=sharing)
+3. [Evaluation](https://colab.research.google.com/drive/1Z22bb1SiKoQRksgGNlqRBhPkCofSZZOA?usp=sharing)
