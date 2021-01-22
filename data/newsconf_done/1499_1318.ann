@@ -1,0 +1,39 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Implementation 27 43	aid to education
+R1	Act Arg1:T2 Arg2:T3	
+T4	Actor 49 59	Mr. Barden
+T5	Actor 64 65	I
+R2	Interact Arg1:T2 Arg2:T4	
+T6	Actor 191 204	Mr. President
+T7	Actor 209 212	you
+T8	Actor 303 316	Mr. President
+T9	Actor 388 401	Mr. President
+T10	Actor 431 444	Mr. President
+T11	Actor 499 512	Mr. President
+T12	Actor 714 727	Mr. President
+T13	Actor 741 742	I
+T14	Actor 627 640	Mr. President
+T15	Actor 72 82	Mr. Barden
+T16	Implementation 83 100	to get a bill out
+T17	Institution 109 118	the House
+T18	Implementation 125 139	vote on a bill
+R3	Support Arg1:T17 Arg2:T18	
+R4	Support Arg1:T5 Arg2:T16	
+R5	Interact Arg1:T5 Arg2:T15	
+T19	Institution 220 237	the United States
+T20	Implementation 252 298	the Mexican request for aid in oil development
+R6	Support Arg1:T19 Arg2:T20	
+R7	Support Arg1:T7 Arg2:T19	
+T21	Actor 318 319	J
+T22	Implementation 326 350	answer that question now
+R8	Oppose Arg1:T21 Arg2:T22	
+T23	Attainment 449 492	the swimming pool disturbances in Anacostia
+T24	OtherPolitical 769 771	it
+R9	Act Arg1:T13 Arg2:T24	
+T25	Actor 645 648	you
+T26	Institution 681 689	the Hill
+T27	Implementation 690 709	to cut excise taxes
+R10	Act Arg1:T25 Arg2:T27	
+R11	Support Arg1:T26 Arg2:T27	
+T28	Attainment 527 616	An incident involving interracial disturbances at a municipal swimming pool in Washington

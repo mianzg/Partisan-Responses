@@ -1,0 +1,26 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 29 30	I
+T3	Attainment 51 67	any such a trend
+T4	Actor 19 20	I
+T5	Implementation 168 184	a tidelands bill
+T6	Implementation 244 265	veto that legislation
+T7	Actor 223 226	you
+R1	Act Arg1:T7 Arg2:T6	
+T8	Implementation 291 307	a tidelands bill
+T9	Actor 363 366	you
+T10	Actor 351 352	I
+R2	Interact Arg1:T10 Arg2:T9	
+T11	Actor 380 381	I
+T12	Actor 393 394	I
+T13	Implementation 406 445	any advance promises on what I might do
+R3	Oppose Arg1:T12 Arg2:T13	
+T14	Implementation 456 503	Mr. President's statement upon vetoing the bill
+T15	Actor 320 333	Mr. President
+T16	Actor 271 284	Mr. President
+T17	Actor 203 206	you
+R4	Interact Arg1:T17 Arg2:T7	
+T18	Actor 77 90	Mr. President
+T19	Implementation 102 130	a lot of conflicting reports
+T20	Actor 142 145	you
+T21	Actor 160 163	you
+R5	Act Arg1:T21 Arg2:T5	

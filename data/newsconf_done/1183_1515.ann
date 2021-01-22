@@ -1,0 +1,22 @@
+T1	Actor 21 22	I
+T2	Actor 35 36	I
+T3	Actor 63 64	I
+T4	Actor 75 76	I
+T6	Actor 121 122	I
+T7	Actor 409 410	I
+T8	Actor 470 471	I
+T9	Actor 505 506	I
+R1	Interact Arg1:T3 Arg2:T4	
+T10	Implementation 88 119	to give such support as I could
+R2	Support Arg1:T4 Arg2:T10	
+T5	Actor 182 194	no candidate
+T11	Implementation 481 498	to give some help
+R3	Act Arg1:T8 Arg2:T11	
+T12	Implementation 524 539	to try to do it
+R4	Support Arg1:T9 Arg2:T12	
+T13	Implementation 311 369	to put no candidate in no candidate position of prominence
+T14	Actor 236 243	someone
+T15	Actor 252 265	the authority
+T16	Implementation 282 306	to nominate no candidate
+R5	Support Arg1:T15 Arg2:T16	
+R6	Support Arg1:T15 Arg2:T13	

@@ -1,0 +1,14 @@
+T1	Actor 448 449	I
+T2	Actor 15 16	I
+T3	OtherPolitical 33 47	that situation
+T4	OtherPolitical 49 51	it
+T5	Actor 110 124	National Guard
+T6	Institution 147 169	the Federal Government
+R1	Support Arg1:T6 Arg2:T5	
+T7	Actor 199 213	National Guard
+T8	Implementation 224 254	to be worked into this program
+T9	Implementation 299 315	The Navy Reserve
+T10	Implementation 320 338	the Marine Reserve
+T11	Actor 366 367	I
+T12	Implementation 378 446	to get The Navy Reserve and the Marine Reserve in the same situation
+R2	Support Arg1:T11 Arg2:T12	

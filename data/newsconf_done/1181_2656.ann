@@ -1,0 +1,18 @@
+T1	Actor 259 260	I
+T2	Actor 267 268	I
+T3	Actor 117 128	Mr. Connole
+T5	Actor 213 217	they
+T7	Actor 0 13	THE PRESIDENT
+T8	Implementation 273 289	get a better man
+R1	Support Arg1:T2 Arg2:T8	
+R2	Support Arg1:T1 Arg2:T8	
+T9	Implementation 65 82	to appoint people
+T10	Implementation 87 115	to get the best people I can
+T6	Actor 141 156	one of my staff
+R3	Interact Arg1:T3 Arg2:T6	
+T4	Implementation 169 207	to ask about Mr. Connole reappointment
+R4	Support Arg1:T3 Arg2:T4	
+T11	Actor 223 229	they'd
+R5	Interact Arg1:T5 Arg2:T11	
+T12	Implementation 240 257	his reappointment
+R6	Act Arg1:T5 Arg2:T12	

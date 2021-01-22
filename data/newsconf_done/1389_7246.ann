@@ -1,0 +1,15 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	OtherPolitical 21 23	it
+R1	Act Arg1:T2 Arg2:T3	
+T4	Actor 40 54	Newbold Morris
+T5	Actor 80 97	Special Assistant
+T6	Actor 168 192	Attorney General McGrath
+T7	Actor 101 121	the Attorney General
+R2	Interact Arg1:T5 Arg2:T7	
+R3	Interact Arg1:T4 Arg2:T7	
+T8	Implementation 122 149	to probe Federal corruption
+R4	Oppose Arg1:T6 Arg2:T4	
+R5	Oppose Arg1:T6 Arg2:T5	
+R6	Support Arg1:T4 Arg2:T8	
+R7	Support Arg1:T5 Arg2:T8	

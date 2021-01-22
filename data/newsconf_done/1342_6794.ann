@@ -1,0 +1,25 @@
+T1	Actor 21 23	we
+T2	Actor 0 13	THE PRESIDENT
+T3	Implementation 44 62	issued invitations
+R1	Support Arg1:T1 Arg2:T3	
+T4	Implementation 188 206	very serious study
+T5	Actor 124 126	we
+T6	Attainment 69 95	the thing that needs study
+T7	OtherPolitical 228 238	the policy
+T8	Actor 248 249	I
+R2	Support Arg1:T8 Arg2:T7	
+T9	Implementation 277 308	treating our allies as partners
+R3	Support Arg1:T8 Arg2:T9	
+T10	Actor 474 491	No one individual
+T11	Institution 495 509	no one country
+T12	Attainment 520 547	all the wisdom in the world
+R4	Achieve Arg1:T10 Arg2:T12	
+R5	Achieve Arg1:T11 Arg2:T12	
+T13	OtherPolitical 561 583	a lot of investigation
+T14	Actor 657 658	I
+T15	Implementation 602 628	serious moves of this kind
+T16	Attainment 322 386	the problem of discussing with governmental leaders in the world
+T17	Actor 401 434	governmental leaders in the world
+T18	OtherPolitical 104 118	the conditions
+R6	Enable Arg1:T4 Arg2:T18	
+R7	Enable Arg1:T4 Arg2:T6	

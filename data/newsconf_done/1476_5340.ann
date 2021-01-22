@@ -1,0 +1,26 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Implementation 35 57	to make on the subject
+R1	Act Arg1:T2 Arg2:T3	
+T4	Actor 59 60	I
+T5	Actor 75 76	I
+T6	Institution 84 115	the Senate of the United States
+R2	Interact Arg1:T4 Arg2:T5	
+T7	Actor 116 117	I
+T8	Actor 301 302	I
+T9	Actor 315 317	we
+T10	Actor 371 384	Mr. President
+T11	Actor 389 392	you
+T12	Actor 397 435	those additional 3,000 Treasury agents
+R3	Support Arg1:T11 Arg2:T12	
+T13	Actor 443 446	you
+R4	Interact Arg1:T8 Arg2:T9	
+T14	Implementation 455 511	to collect that additional billion or billion and a half
+R5	Support Arg1:T13 Arg2:T14	
+T15	Actor 124 146	distinguished Senators
+R6	Interact Arg1:T7 Arg2:T15	
+T16	OtherPolitical 176 191	the public debt
+T17	Institution 217 234	the United States
+T18	Attainment 244 252	bankrupt
+T19	Actor 257 259	we
+R7	Achieve Arg1:T17 Arg2:T18	

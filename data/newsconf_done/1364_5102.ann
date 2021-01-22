@@ -1,0 +1,21 @@
+T1	Actor 522 523	I
+T2	Actor 15 16	I
+T3	Actor 536 563	the Senators with seniority
+T4	Implementation 571 620	hog all the good places on three major committees
+R1	Support Arg1:T3 Arg2:T4	
+R2	Oppose Arg1:T1 Arg2:T3	
+T5	Actor 42 43	I
+T6	Institution 237 290	the Public Buildings and the Appropriations Committee
+T7	Institution 394 422	the Appropriations Committee
+T8	Actor 65 66	I
+T9	Institution 75 85	the Senate
+T10	Actor 86 87	I
+T11	OtherPolitical 92 114	three major committees
+R3	Achieve Arg1:T10 Arg2:T11	
+T12	Actor 116 117	I
+T13	Institution 129 157	the Appropriations Committee
+T14	Institution 162 195	the Interstate Commerce Committee
+T15	Actor 292 293	I
+T16	OtherPolitical 305 327	three major committees
+T17	Actor 333 334	I
+T18	Actor 381 382	I

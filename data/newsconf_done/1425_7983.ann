@@ -1,0 +1,23 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Implementation 41 54	to look it up
+T4	Actor 29 30	I
+R1	Support Arg1:T4 Arg2:T3	
+T5	Actor 56 57	I
+T6	Actor 139 140	I
+T7	OtherPolitical 146 159	those reports
+R2	Act Arg1:T6 Arg2:T7	
+T8	Actor 180 181	I
+T9	Actor 193 196	you
+T10	Implementation 255 299	going back and looking any special report up
+R3	Support Arg1:T8 Arg2:T10	
+R4	Support Arg1:T8 Arg2:T9	
+T11	Actor 62 63	I
+R5	Interact Arg1:T5 Arg2:T11	
+T12	OtherPolitical 96 109	those reports
+T13	OtherPolitical 68 81	those reports
+R6	Act Arg1:T11 Arg2:T13	
+T14	OtherPolitical 197 211	the exact date
+R7	Enable Arg1:T10 Arg2:T14	
+T15	Attainment 215 245	what was in any special report
+R8	Enable Arg1:T10 Arg2:T15	

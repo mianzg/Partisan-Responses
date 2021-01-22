@@ -1,0 +1,12 @@
+T1	Actor 204 205	I
+T2	Actor 211 214	you
+T3	Actor 0 13	THE PRESIDENT
+T4	Actor 21 24	you
+T5	Actor 38 40	me
+T6	Actor 63 64	I
+T7	Actor 121 122	I
+T8	Actor 167 180	Mr. President
+R1	Interact Arg1:T1 Arg2:T2	
+T9	Actor 147 150	you
+R2	Interact Arg1:T7 Arg2:T9	
+T10	Actor 152 165	Mr. President

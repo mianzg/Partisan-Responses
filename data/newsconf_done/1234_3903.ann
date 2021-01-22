@@ -1,0 +1,35 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Institution 29 57	he National Security Council
+T3	Institution 59 66	the OCB
+T4	Actor 118 119	I
+T5	OtherPolitical 165 169	that
+R1	Act Arg1:T4 Arg2:T5	
+T6	Actor 195 230	a Special Assistant toTHE PRESIDENT
+T7	Actor 232 234	We
+T8	Institution 286 293	the OCB
+R2	Support Arg1:T7 Arg2:T8	
+T9	Actor 299 300	I
+T10	Actor 418 419	I
+T11	Implementation 439 468	a psychological warfare board
+R3	Oppose Arg1:T10 Arg2:T11	
+T12	Actor 478 479	I
+T13	Actor 744 745	I
+T14	Actor 758 760	We
+R4	Interact Arg1:T13 Arg2:T14	
+T15	OtherPolitical 780 810	the full possibilities of that
+R5	Support Arg1:T14 Arg2:T15	
+T16	Actor 495 496	I
+T17	Actor 511 513	We
+R6	Interact Arg1:T16 Arg2:T17	
+T19	OtherPolitical 310 312	it
+T18	Attainment 352 416	all activities and echelons of Government in almost every office
+R7	Enable Arg1:T19 Arg2:T18	
+T20	Implementation 520 546	put possibly an individual
+R8	Support Arg1:T17 Arg2:T20	
+T21	Institution 593 598	State
+T22	Actor 606 608	he
+T23	Attainment 620 639	that sole job to do
+R9	Achieve Arg1:T22 Arg2:T23	
+T24	Actor 666 668	he
+T25	Implementation 678 702	cooperating with the OCB
+R10	Support Arg1:T24 Arg2:T25	

@@ -1,0 +1,35 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 41 50	Mr. Lloyd
+T4	OtherPolitical 63 78	any information
+R1	Act Arg1:T3 Arg2:T4	
+R2	Interact Arg1:T2 Arg2:T3	
+T5	Actor 80 89	Mr. Lloyd
+T6	Actor 157 166	Mr. Lloyd
+T7	Actor 184 185	I
+T8	Actor 218 232	David D. Lloyd
+T9	Actor 409 410	I
+T10	Actor 458 471	Mr. President
+T11	Actor 479 480	I
+T12	Implementation 485 503	give you a comment
+R3	Support Arg1:T11 Arg2:T12	
+T13	Actor 507 543	Governor Thomas E. Dewey of New York
+T14	Actor 234 258	Administrative Assistant
+T15	Actor 261 274	THE PRESIDENT
+T16	Actor 285 298	Mr. President
+T17	Actor 305 308	you
+T18	Implementation 324 356	Governor Dewey's New York speech
+T19	Implementation 367 389	a Pacific defense pact
+R4	Act Arg1:T17 Arg2:T18	
+R5	Act Arg1:T17 Arg2:T19	
+T20	Actor 394 407	THE PRESIDENT
+T21	OtherPolitical 437 439	it
+R6	Act Arg1:T9 Arg2:T21	
+T22	OtherPolitical 771 795	the Congressional Record
+T23	Attainment 715 754	The full text of the Governor's address
+T24	Institution 561 585	the Loyalty Review Board
+T25	Institution 603 617	New York City,
+T26	Implementation 624 659	the establishment of a Pacific pact
+R7	Support Arg1:T13 Arg2:T26	
+T27	Implementation 671 696	the North Atlantic Treaty
+T28	Implementation 701 713	the Rio Pact

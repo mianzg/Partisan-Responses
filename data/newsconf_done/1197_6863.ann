@@ -1,0 +1,16 @@
+T1	Actor 15 16	I
+T2	Actor 128 129	I
+T3	Actor 187 188	I
+T4	Actor 23 25	we
+T6	Implementation 154 185	to go to the Federal Government
+R1	Oppose Arg1:T2 Arg2:T6	
+T7	Actor 0 13	THE PRESIDENT
+T5	Implementation 202 224	to be a pressure group
+R2	Oppose Arg1:T3 Arg2:T5	
+T8	Implementation 233 272	asking the Federal Government for money
+R3	Oppose Arg1:T3 Arg2:T8	
+R4	Interact Arg1:T1 Arg2:T4	
+T9	Implementation 56 81	the complete arrangements
+R5	Act Arg1:T4 Arg2:T9	
+T10	Attainment 91 126	National Goals Commission financing
+R6	Enable Arg1:T9 Arg2:T10	

@@ -1,0 +1,33 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 22	I
+T3	Actor 50 51	I
+R1	Interact Arg1:T2 Arg2:T3	
+T4	Actor 544 545	I
+T5	Institution 550 558	Congress
+T6	Institution 438 446	Congress
+T8	Actor 507 508	I
+T9	Actor 480 481	I
+T10	Implementation 458 478	such a thing as this
+R2	Support Arg1:T6 Arg2:T10	
+T11	Actor 401 402	I
+T12	Implementation 407 433	to get Congress to correct
+R3	Support Arg1:T11 Arg2:T12	
+T13	Actor 259 260	I
+T14	Institution 267 275	Congress
+T15	Actor 303 304	I
+T16	Actor 79 80	I
+T17	Actor 120 121	I
+T18	Implementation 598 629	to keep Congress out of the way
+T19	Actor 639 640	I
+T20	Implementation 652 681	what else to do with Congress
+R4	Act Arg1:T19 Arg2:T20	
+T7	Actor 55 73	Commander in Chief
+T21	Actor 162 163	I
+R5	Interact Arg1:T17 Arg2:T21	
+T22	Implementation 230 257	thwart the will of Congress
+R6	Oppose Arg1:T21 Arg2:T22	
+T23	Institution 323 331	Congress
+T24	Implementation 342 388	some very bad mistakes in dealing with defense
+R7	Support Arg1:T23 Arg2:T24	
+T25	Implementation 490 505	to put Congress
+R8	Support Arg1:T9 Arg2:T25	

@@ -1,0 +1,17 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 36 37	I
+T3	Actor 24 25	I
+T4	Institution 73 90	press conferences
+T5	Actor 315 316	I
+T6	OtherPolitical 333 337	that
+R1	Oppose Arg1:T5 Arg2:T6	
+T7	Actor 338 339	I
+T8	Actor 91 92	I
+T9	Actor 101 102	I
+T10	Attainment 112 182	all the experiences that a man can possibly have at a press conference
+R2	Achieve Arg1:T9 Arg2:T10	
+T11	Actor 188 189	I
+T12	Actor 211 212	I
+T13	Implementation 224 309	to discontinue all the experiences that a man can possibly have at a press conference
+R4	Oppose Arg1:T11 Arg2:T12	
+R5	Support Arg1:T12 Arg2:T13	

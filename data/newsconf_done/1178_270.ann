@@ -1,0 +1,6 @@
+T1	Actor 21 22	I
+T2	Actor 38 39	I
+T3	Implementation 45 67	the demand on that one
+R1	Act Arg1:T2 Arg2:T3	
+R2	Interact Arg1:T1 Arg2:T2	
+T4	Actor 0 13	THE PRESIDENT

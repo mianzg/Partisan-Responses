@@ -1,0 +1,56 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 22	I
+T3	Actor 58 60	We
+T4	Implementation 71 99	to wait until the time comes
+R1	Support Arg1:T3 Arg2:T4	
+T5	Actor 107 120	THE PRESIDENT
+T6	Actor 148 151	you
+T7	Implementation 167 209	flexible price supports in the Senate bill
+R2	Oppose Arg1:T6 Arg2:T7	
+T8	Actor 215 218	you
+T9	Actor 224 226	We
+T10	Actor 234 247	THE PRESIDENT
+T11	Implementation 278 293	the Senate bill
+T12	Actor 249 250	I
+R3	Act Arg1:T12 Arg2:T11	
+T13	Actor 295 296	I
+T14	Implementation 335 351	the pending bill
+R4	Act Arg1:T13 Arg2:T14	
+T15	Actor 1277 1278	I
+T16	Actor 1262 1275	THE PRESIDENT
+T17	Actor 1186 1189	you
+T18	Actor 948 949	I
+T19	Actor 1197 1243	to make a political speech before election day
+R5	Support Arg1:T17 Arg2:T19	
+T20	Actor 955 958	you
+T21	Actor 989 990	I
+T22	Implementation 996 1013	to raise my voice
+R6	Support Arg1:T21 Arg2:T22	
+T23	Actor 1025 1040	those gentlemen
+T24	Actor 1069 1070	I
+T25	Attainment 1121 1143	the New York situation
+T26	Implementation 779 871	A detailed summary of the status of legislation relating to recommendations of the President
+T27	Institution 917 932	the White House
+R7	Support Arg1:T27 Arg2:T26	
+T28	Institution 873 886	81st Congress
+T29	Actor 467 469	We
+T30	Actor 582 583	I
+T31	Actor 632 633	I
+T32	Actor 651 654	you
+T33	OtherPolitical 641 647	itself
+R8	Act Arg1:T31 Arg2:T33	
+R9	Interact Arg1:T31 Arg2:T32	
+T34	OtherPolitical 720 731	public laws
+R10	Interact Arg1:T18 Arg2:T20	
+T35	OtherPolitical 1299 1301	it
+R11	Oppose Arg1:T15 Arg2:T35	
+T36	Actor 521 522	I
+T37	Actor 533 536	you
+R12	Interact Arg1:T36 Arg2:T37	
+T38	OtherPolitical 554 558	that
+R13	Act Arg1:T37 Arg2:T38	
+T39	Actor 563 576	THE PRESIDENT
+T40	Actor 442 455	THE PRESIDENT
+T41	Implementation 479 518	this summary of the legislative program
+R14	Act Arg1:T29 Arg2:T41	
+T42	Actor 407 420	THE PRESIDENT

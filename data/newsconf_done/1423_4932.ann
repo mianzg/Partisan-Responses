@@ -1,0 +1,6 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Implementation 39 75	to read General Marshall's testimony
+T3	Actor 32 35	you
+T4	Actor 15 17	My
+R1	Interact Arg1:T4 Arg2:T3	
+R2	Support Arg1:T4 Arg2:T2	

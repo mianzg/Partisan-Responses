@@ -1,0 +1,9 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 30 39	Mr. Allen
+R1	Interact Arg1:T2 Arg2:T3	
+T4	Actor 46 47	I
+T5	Actor 65 73	Anderson
+T6	Actor 98 107	Mr. Allen
+R2	Interact Arg1:T4 Arg2:T5	
+R3	Interact Arg1:T5 Arg2:T6	

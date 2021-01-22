@@ -1,0 +1,6 @@
+T1	Actor 15 17	We
+T2	Institution 31 39	Viet-Nam
+T3	Actor 41 43	We
+T4	OtherPolitical 59 70	that subjec
+R1	Act Arg1:T3 Arg2:T4	
+T5	Actor 0 13	THE PRESIDENT

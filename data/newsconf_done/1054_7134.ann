@@ -1,0 +1,176 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Implementation 30 59	the transcript of the hearing
+T4	Actor 65 66	I
+T5	Actor 84 97	General Gavin
+T6	Actor 167 180	General Gavin
+T7	Actor 185 191	Kennan
+T8	Institution 212 226	the Government
+T9	Actor 2165 2175	General Ky
+T10	Actor 237 243	No one
+R1	Act Arg1:T2 Arg2:T3	
+R2	Interact Arg1:T4 Arg2:T5	
+T11	Implementation 250 269	to escalate the war
+R3	Support Arg1:T10 Arg2:T11	
+T12	Actor 274 280	no one
+T13	Implementation 287 325	to lose any more men than is necessary
+R4	Support Arg1:T12 Arg2:T13	
+T14	Actor 327 333	No one
+T15	Implementation 340 364	to surrender and get out
+R5	Support Arg1:T14 Arg2:T15	
+T16	Actor 375 381	no one
+T17	Actor 389 393	they
+T18	Actor 473 474	I
+T19	Actor 496 500	they
+T20	OtherPolitical 516 528	the program.
+R6	Support Arg1:T19 Arg2:T20	
+T21	Actor 545 547	we
+T22	Implementation 561 594	to consider what any Senator says
+R7	Support Arg1:T21 Arg2:T22	
+R8	Interact Arg1:T18 Arg2:T19	
+R9	Support Arg1:T6 Arg2:T8	
+R10	Support Arg1:T7 Arg2:T8	
+T23	Actor 401 402	I
+T24	Implementation 427 458	any great difference of opinion
+R11	Oppose Arg1:T23 Arg2:T24	
+T25	Actor 596 597	I
+T26	Actor 616 627	Congressmen
+R12	Interact Arg1:T25 Arg2:T26	
+T27	OtherPolitical 602 610	a letter
+R13	Act Arg1:T26 Arg2:T27	
+T28	Implementation 638 655	Congressmen views
+R14	Act Arg1:T26 Arg2:T28	
+T29	Actor 635 637	me
+R15	Interact Arg1:T26 Arg2:T29	
+T30	Actor 661 662	I
+T31	Actor 671 682	Congressmen
+R16	Support Arg1:T30 Arg2:T31	
+T32	Actor 698 709	Congressmen
+T33	Institution 745 759	the Government
+T34	OtherPolitical 1064 1081	the circumstances
+T35	Actor 2002 2003	I
+T36	OtherPolitical 2011 2019	strength
+R17	Achieve Arg1:T35 Arg2:T36	
+T37	Actor 2062 2081	the boys in Vietnam
+R18	Interact Arg1:T35 Arg2:T37	
+T38	Actor 1788 1789	I
+T39	Actor 779 780	I
+R19	Interact Arg1:T30 Arg2:T32	
+T40	Actor 728 739	Congressmen
+R20	Interact Arg1:T30 Arg2:T40	
+T41	OtherPolitical 785 793	a letter
+T42	Actor 799 812	some Senators
+R21	Act Arg1:T42 Arg2:T41	
+R22	Interact Arg1:T39 Arg2:T42	
+T43	Actor 817 830	some Senators
+T44	Actor 836 838	me
+R23	Interact Arg1:T43 Arg2:T44	
+T45	Implementation 844 858	Senators views
+R24	Act Arg1:T43 Arg2:T45	
+T46	Actor 864 865	I
+T47	Actor 874 887	some Senators
+R25	Support Arg1:T46 Arg2:T47	
+T48	Actor 897 910	some Senators
+R26	Interact Arg1:T46 Arg2:T48	
+T49	Actor 911 912	I
+T50	OtherPolitical 925 927	it
+R27	Support Arg1:T49 Arg2:T50	
+T51	Actor 940 953	some Senators
+R28	Interact Arg1:T49 Arg2:T51	
+T52	Implementation 968 998	what I said to the Congressmen
+R29	Act Arg1:T49 Arg2:T52	
+T53	OtherPolitical 1090 1105	other decisions
+T54	Implementation 1288 1297	the pause
+T55	Implementation 1320 1340	resuming the bombing
+T56	Implementation 1367 1387	resuming the bombing
+T57	Actor 1346 1350	some
+T58	Actor 1303 1307	some
+T59	Implementation 1414 1425	the bombing
+R30	Support Arg1:T58 Arg2:T55	
+R31	Oppose Arg1:T57 Arg2:T56	
+R32	Enable Arg1:T34 Arg2:T53	
+T60	Actor 1112 1115	our
+T61	OtherPolitical 1126 1141	other decisions
+R33	Achieve Arg1:T60 Arg2:T61	
+T62	Actor 1147 1150	our
+T63	Implementation 1167 1190	to have other decisions
+T64	OtherPolitical 1191 1202	suggestions
+T65	OtherPolitical 1207 1222	recommendations
+R34	Support Arg1:T62 Arg2:T63	
+R35	Support Arg1:T62 Arg2:T64	
+R36	Support Arg1:T62 Arg2:T65	
+T66	OtherPolitical 1226 1241	other decisions
+T67	Institution 1252 1275	Some of other decisions
+R37	Support Arg1:T67 Arg2:T54	
+T68	OtherPolitical 1503 1518	recommendations
+T69	Actor 1427 1428	I
+T70	Implementation 1449 1469	one Senator's record
+R38	Act Arg1:T69 Arg2:T70	
+T71	Actor 1520 1521	I
+T72	Actor 1599 1600	I
+T73	Actor 1761 1774	every citizen
+T74	Actor 1739 1756	every Congressman
+T75	Actor 1704 1733	every Senator of either party
+T76	Implementation 1679 1695	every suggestion
+R39	Act Arg1:T75 Arg2:T76	
+R40	Act Arg1:T74 Arg2:T76	
+R41	Act Arg1:T73 Arg2:T76	
+T77	Actor 1633 1635	we
+R42	Support Arg1:T72 Arg2:T77	
+T78	Implementation 1641 1675	careful and thorough consideration
+R43	Act Arg1:T77 Arg2:T78	
+R44	Support Arg1:T72 Arg2:T78	
+T79	Actor 1831 1850	the boys in Vietnam
+R45	Interact Arg1:T38 Arg2:T79	
+T80	Implementation 1801 1818	a hundred letters
+R47	Act Arg1:T38 Arg2:T80	
+T81	Actor 1855 1856	I
+T82	Implementation 1876 1893	a hundred letters
+R48	Act Arg1:T81 Arg2:T82	
+T83	Actor 1906 1925	the boys in Vietnam
+T84	Actor 1981 2000	the boys in Vietnam
+R46	Interact Arg1:T81 Arg2:T83	
+T85	OtherPolitical 1934 1938	help
+R49	Act Arg1:T81 Arg2:T85	
+T86	Implementation 1951 1968	a hundred letters
+R50	Enable Arg1:T86 Arg2:T85	
+T87	Implementation 2032 2049	a hundred letters
+R51	Enable Arg1:T87 Arg2:T36	
+T88	Implementation 2096 2110	VIETNAM POLICY
+T89	Actor 2119 2132	Mr. President
+T90	Actor 2177 2206	the Prime Minister of Vietnam
+T91	Actor 2221 2234	Mr. President
+T92	Actor 2692 2695	you
+T93	Actor 2727 2728	I
+T94	Implementation 2741 2753	to negotiate
+R52	Support Arg1:T93 Arg2:T94	
+T95	Actor 2481 2484	you
+T96	Institution 2489 2494	Hanoi
+T97	Institution 2155 2163	Honolulu
+T98	Implementation 1535 1551	one Senator card
+R53	Act Arg1:T71 Arg2:T98	
+T99	Actor 1556 1557	I
+T100	Actor 1567 1578	one Senator
+R54	Interact Arg1:T99 Arg2:T100	
+T101	Institution 2257 2265	Honolulu
+T102	Actor 2267 2277	General Ky
+T103	Actor 2279 2314	the Prime Minister of South Vietnam
+T104	Actor 2344 2352	Vietcong
+R55	Oppose Arg1:T103 Arg2:T104	
+R56	Oppose Arg1:T102 Arg2:T104	
+T105	Actor 2357 2360	you
+T106	Actor 2461 2474	THE PRESIDENT
+T107	OtherPolitical 2367 2380	this position
+T108	Implementation 2501 2513	to negotiate
+T109	Actor 2609 2615	no one
+T110	Implementation 2638 2687	hearing all the people interested in negotiations
+R57	Support Arg1:T109 Arg2:T110	
+T111	Actor 2515 2516	I
+T112	Implementation 2528 2586	the viewpoint of all the people interested in negotiations
+T113	Attainment 2395 2439	any difficulties should negotiations develop
+R58	Enable Arg1:T107 Arg2:T113	
+R59	Act Arg1:T111 Arg2:T112	
+R60	Act Arg1:T111 Arg2:T110	
+T114	Implementation 2709 2725	to produce Hanoi
+R61	Support Arg1:T92 Arg2:T114	
+R62	Support Arg1:T96 Arg2:T108	

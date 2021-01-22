@@ -1,0 +1,38 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 32 33	I
+T3	Actor 43 61	the Vice President
+T4	Actor 230 233	you
+T5	Actor 689 698	Mr. Nixon
+T6	Actor 725 743	the Vice President
+R1	Interact Arg1:T2 Arg2:T3	
+T7	OtherPolitical 193 223	to have something of that sort
+T8	Actor 168 186	the Vice President
+R2	Support Arg1:T8 Arg2:T7	
+T9	Actor 452 465	the President
+T10	Actor 470 484	Vice President
+T11	Actor 556 557	I
+T12	Actor 565 583	the Vice President
+T13	Implementation 610 667	to attend to the Vice President own constitutional duties
+R3	Support Arg1:T12 Arg2:T13	
+R4	Interact Arg1:T11 Arg2:T12	
+T14	Actor 825 841	a Vice President
+T15	Actor 862 878	a Vice President
+T16	Actor 890 891	I
+T17	Actor 974 975	I
+T18	Actor 999 1015	a Vice President
+R5	Support Arg1:T17 Arg2:T18	
+T19	Actor 904 906	we
+R6	Interact Arg1:T16 Arg2:T19	
+T20	Implementation 933 972	a little precedent for others to follow
+R7	Support Arg1:T19 Arg2:T20	
+T21	Attainment 758 792	the interests of the United States
+T22	Actor 794 795	I
+R8	Interact Arg1:T22 Arg2:T14	
+T23	Actor 344 359	Vice President.
+T24	Actor 326 339	the President
+T25	OtherPolitical 253 275	the history of America
+R9	Act Arg1:T4 Arg2:T25	
+T26	OtherPolitical 379 401	the history of America
+T27	Attainment 132 166	the interests of the United States
+T28	Implementation 65 120	being used to the limits of the Vice President capacity
+R10	Act Arg1:T3 Arg2:T28	

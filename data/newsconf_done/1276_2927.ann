@@ -1,0 +1,16 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 26 27	I
+T3	Actor 77 78	I
+T4	Actor 112 113	I
+T5	Implementation 119 151	get right here before this group
+R1	Support Arg1:T4 Arg2:T5	
+T6	Implementation 82 107	appear almost once a week
+R2	Support Arg1:T3 Arg2:T6	
+T7	Institution 237 244	America
+T8	Actor 267 277	you people
+T9	OtherPolitical 254 258	that
+R3	Act Arg1:T8 Arg2:T9	
+T10	Implementation 334 397	to go in addition on sort of a periodic basis on fireside chats
+T11	Actor 399 400	I
+T12	Actor 413 414	I
+R4	Act Arg1:T11 Arg2:T10	

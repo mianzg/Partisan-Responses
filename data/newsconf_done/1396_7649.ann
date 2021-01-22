@@ -1,0 +1,21 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 33 34	I
+T4	Actor 146 159	Mr. President
+T5	Actor 337 350	THE PRESIDENT
+T6	Actor 367 368	I
+T7	Actor 256 259	You
+T8	Actor 276 289	good Senators
+R1	Oppose Arg1:T7 Arg2:T8	
+T9	Implementation 301 324	come to the White House
+R2	Oppose Arg1:T8 Arg2:T9	
+T10	Actor 197 209	Mr. Kefauver
+T11	Implementation 219 254	to keep good Senators in the Senate
+T12	Actor 210 213	you
+R3	Support Arg1:T12 Arg2:T11	
+T13	Actor 161 162	I
+T14	Implementation 52 72	start that precedent
+R4	Oppose Arg1:T3 Arg2:T14	
+T15	Actor 81 84	you
+T16	Implementation 101 129	to quote the whole interview
+R5	Support Arg1:T15 Arg2:T16	

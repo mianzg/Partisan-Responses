@@ -1,0 +1,20 @@
+T1	Actor 482 483	I
+T2	Actor 0 13	THE PRESIDENT
+T3	Actor 24 25	I
+T4	Actor 78 80	we
+T5	OtherPolitical 89 109	certain developments
+R1	Act Arg1:T4 Arg2:T5	
+T6	Actor 183 184	I
+T7	Implementation 221 267	the right of the Congress of the United States
+R2	Support Arg1:T6 Arg2:T7	
+T8	Implementation 268 314	to examine every proposal seriously, earnestly
+R3	Support Arg1:T6 Arg2:T8	
+T9	Implementation 319 354	dig to the bottom of every proposal
+T10	Implementation 360 403	contemplate every proposal possible effects
+R4	Support Arg1:T6 Arg2:T9	
+R5	Support Arg1:T6 Arg2:T10	
+T11	Actor 410 411	I
+T12	Implementation 423 475	any kind of delay that is just for the sake of delay
+R6	Oppose Arg1:T11 Arg2:T12	
+T13	OtherPolitical 501 503	it
+R7	Oppose Arg1:T1 Arg2:T13	

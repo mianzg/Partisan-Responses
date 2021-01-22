@@ -1,0 +1,17 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 32 35	you
+T3	Institution 55 64	Australia
+T4	Institution 69 80	New Zealand
+T5	Actor 166 167	I
+T6	Institution 189 215	the proper Asiatic nations
+T7	Actor 233 234	I
+T8	Institution 267 276	Australia
+T9	Actor 305 307	we
+T10	OtherPolitical 323 341	work out something
+R1	Support Arg1:T9 Arg2:T10	
+T11	Institution 102 137	the British Commonwealth of Nations
+T12	Actor 397 400	you
+T13	OtherPolitical 412 414	it
+R2	Support Arg1:T12 Arg2:T13	
+T14	Institution 281 292	New Zealand
+T15	Institution 292 303	New Zealand

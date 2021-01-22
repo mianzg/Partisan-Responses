@@ -1,0 +1,48 @@
+T1	Actor 15 25	Mr. Wilson
+T2	Actor 46 47	I
+T3	Actor 57 60	you
+T4	OtherPolitical 67 70	war
+R1	Interact Arg1:T2 Arg2:T3	
+T5	Actor 200 202	we
+T6	Implementation 228 255	to express a generalization
+R2	Support Arg1:T5 Arg2:T6	
+T7	Actor 353 354	I
+T8	OtherPolitical 374 376	it
+R3	Oppose Arg1:T7 Arg2:T8	
+T9	Attainment 276 304	an infinite variety of cases
+T10	Attainment 312 347	an infinite variety of provocations
+R4	Enable Arg1:T6 Arg2:T9	
+R5	Enable Arg1:T6 Arg2:T10	
+T11	Actor 390 391	I
+T12	Attainment 447 481	the safety and security of America
+T13	Actor 492 494	we
+T14	OtherPolitical 518 525	weapons
+T15	Attainment 580 602	a tremendous advantage
+R6	Enable Arg1:T14 Arg2:T15	
+T16	Actor 567 579	the attacker
+R7	Achieve Arg1:T16 Arg2:T15	
+T17	Actor 604 635	the man who attacks by surprise
+T18	OtherPolitical 682 685	war
+T19	Implementation 729 773	creating such widespread destruction quickly
+T20	Attainment 637 660	The element of surprise
+R8	Enable Arg1:T19 Arg2:T20	
+T23	Actor 1193 1194	I
+T24	OtherPolitical 1168 1187	that kind of thing,
+R9	Oppose Arg1:T23 Arg2:T24	
+T25	Actor 1228 1229	I
+T26	Actor 1242 1254	anybody else
+R10	Interact Arg1:T25 Arg2:T26	
+R11	Support Arg1:T26 Arg2:T24	
+T27	Attainment 1032 1076	the fringe or the periphery of our interests
+T28	Implementation 1110 1153	any kind of an act on the part of the enemy
+T31	Actor 864 865	I
+T32	Actor 881 894	any President
+T33	Implementation 902 934	do what all America would demand
+R14	Oppose Arg1:T32 Arg2:T33	
+T21	Implementation 957 988	to protect them in an emergency
+T22	Attainment 786 830	any President should be worse than impeached
+T29	Attainment 832 862	any President should be hanged
+R12	Disable Arg1:T33 Arg2:T29	
+R13	Disable Arg1:T33 Arg2:T22	
+T30	Actor 940 953	any President
+R15	Support Arg1:T30 Arg2:T21	

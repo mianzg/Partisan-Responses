@@ -1,0 +1,9 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 22 35	THE PRESIDENT
+T3	Actor 120 130	Mr. Lovett
+T4	Actor 39 49	a good man
+T5	Actor 55 75	a good administrator
+T6	Actor 94 96	we
+R1	Support Arg1:T6 Arg2:T5	
+R2	Support Arg1:T6 Arg2:T4	
+R3	Support Arg1:T6 Arg2:T2	

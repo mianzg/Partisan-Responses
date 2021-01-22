@@ -1,0 +1,57 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 19 20	I
+T3	Actor 37 40	you
+R1	Interact Arg1:T2 Arg2:T3	
+T4	Actor 1830 1833	our
+T5	OtherPolitical 1855 1857	it
+R2	Oppose Arg1:T4 Arg2:T5	
+T6	Implementation 63 170	a reliance on one kind of formation, one type of weapon, one kind of vehicle, or any other thing in an army
+R3	Oppose Arg1:T3 Arg2:T6	
+T7	Actor 202 205	you
+T8	Actor 248 251	you
+T9	Implementation 257 293	to use your forces or the conditions
+R4	Support Arg1:T8 Arg2:T9	
+R5	Interact Arg1:T7 Arg2:T8	
+T10	Actor 306 309	you
+T11	OtherPolitical 320 331	to use this
+R6	Support Arg1:T10 Arg2:T11	
+T12	Actor 333 336	you
+T13	Implementation 359 466	a reliance on one kind of formation, one type of weapon, one kind of vehicle, or any other thing in an army
+R7	Oppose Arg1:T12 Arg2:T13	
+T14	Actor 499 500	I
+T15	Actor 513 514	I
+T16	Implementation 596 644	keep pace with what science is constantly giving
+R8	Support Arg1:T15 Arg2:T16	
+R9	Support Arg1:T14 Arg2:T16	
+T17	Actor 648 650	us
+T18	Actor 674 676	us
+T19	Actor 683 686	you
+T20	OtherPolitical 708 733	to do all of these things
+R10	Support Arg1:T19 Arg2:T20	
+T21	Actor 784 785	I
+T22	Implementation 800 842	make certain that everything us do us need
+R11	Support Arg1:T21 Arg2:T22	
+T23	Actor 880 881	I
+T24	Implementation 898 942	to be effective and efficient and economical
+R12	Support Arg1:T23 Arg2:T24	
+T25	Actor 957 959	us
+T26	Actor 989 991	us
+T27	Implementation 997 1014	have what us need
+R13	Support Arg1:T26 Arg2:T27	
+T28	Actor 1326 1327	I
+T29	Implementation 1039 1067	staying constantly in forces
+T30	Implementation 1194 1220	to keep the kind of forces
+T31	Actor 1175 1177	my
+R14	Support Arg1:T31 Arg2:T30	
+T32	Attainment 1230 1258	meet us situations logically
+R15	Enable Arg1:T30 Arg2:T32	
+T33	Attainment 1273 1324	those that can threaten directly us vital interests
+R16	Disable Arg1:T30 Arg2:T33	
+T34	Actor 1348 1349	I
+R17	Interact Arg1:T28 Arg2:T34	
+T35	Actor 1116 1121	their
+T36	Implementation 1126 1154	to protect what you have got
+R18	Support Arg1:T35 Arg2:T36	
+T37	Attainment 1507 1538	the advent of the atomic weapon
+T38	Attainment 1540 1577	the weapon of great destructive force
+T39	Attainment 1588 1611	means for delivering it

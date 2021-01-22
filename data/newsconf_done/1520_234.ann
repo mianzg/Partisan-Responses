@@ -1,0 +1,32 @@
+T1	Actor 1291 1304	THE PRESIDENT
+T2	Actor 0 13	THE PRESIDENT
+T3	Attainment 113 142	social security fund solvent.
+T4	Implementation 65 99	the additional half of one percent
+R1	Enable Arg1:T4 Arg2:T3	
+T5	Implementation 23 57	the additional half of one percent
+T6	OtherPolitical 148 160	tax increase
+T7	OtherPolitical 351 363	tax increase
+T8	OtherPolitical 219 231	tax increase
+T9	Implementation 240 274	to pass a resolution in the Senate
+T10	Actor 302 304	we
+T11	Attainment 321 344	that fund was piling up
+R2	Achieve Arg1:T10 Arg2:T11	
+T12	Implementation 371 391	be levied every year
+T13	Actor 393 394	I
+T14	Actor 415 419	they
+T15	OtherPolitical 429 457	do that same thing this year
+R3	Oppose Arg1:T14 Arg2:T15	
+T16	Actor 467 468	I
+T17	Implementation 474 511	to see that fund actually get solvent
+R4	Support Arg1:T16 Arg2:T17	
+T18	Attainment 535 602	any danger of we having to make appropriations from current revenue
+R5	Disable Arg1:T17 Arg2:T18	
+T19	Actor 655 668	Mr. President
+T20	Attainment 785 826	the normal lag in the collection of taxes
+T21	Actor 837 849	tax receipts
+T22	Implementation 880 900	be considerably less
+R6	Support Arg1:T21 Arg2:T22	
+T23	Actor 943 956	THE PRESIDENT
+T24	OtherPolitical 1027 1047	this news conference
+T25	Implementation 1105 1123	the Budget Message
+T26	Implementation 1234 1251	House Document 17

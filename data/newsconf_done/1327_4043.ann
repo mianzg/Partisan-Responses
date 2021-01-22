@@ -1,0 +1,38 @@
+T1	Actor 21 22	I
+T2	Actor 44 46	we
+T3	Actor 69 70	I
+T4	Actor 99 100	I
+T5	Actor 361 372	David Bruce
+T6	Actor 600 602	me
+T7	Actor 741 742	I
+T8	OtherPolitical 759 767	that one
+R1	Act Arg1:T7 Arg2:T8	
+T9	Actor 710 712	we
+T10	Actor 115 122	one man
+T11	Actor 374 375	I
+T12	Actor 388 391	his
+R2	Support Arg1:T11 Arg2:T12	
+T13	Actor 403 404	I
+T14	OtherPolitical 427 437	his wisdom
+T15	OtherPolitical 445 453	his tact
+T16	OtherPolitical 455 478	his breadth of approach
+R3	Support Arg1:T13 Arg2:T14	
+R4	Support Arg1:T13 Arg2:T15	
+R5	Support Arg1:T13 Arg2:T16	
+T17	Actor 480 483	his
+T18	Actor 487 494	one man
+T19	Actor 540 542	we
+T20	Actor 548 577	many foreign service officers
+R6	Support Arg1:T19 Arg2:T20	
+T21	Actor 662 673	ambassadors
+T22	Actor 615 644	many foreign service officers
+T23	Actor 129 130	I
+T24	Actor 149 150	I
+T25	OtherPolitical 164 180	the inauguration
+R7	Support Arg1:T24 Arg2:T25	
+T26	Actor 182 183	I
+T27	Actor 191 192	I
+T28	Actor 237 238	I
+T29	Implementation 297 350	his approach to the entire problem of foreign affairs
+T30	Actor 252 253	I
+R8	Support Arg1:T30 Arg2:T29	

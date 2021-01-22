@@ -1,0 +1,53 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 19 20	I
+T3	Institution 47 58	West Berlin
+T4	Actor 99 102	our
+T5	Actor 121 132	West Berlin
+T6	OtherPolitical 137 147	our rights
+T7	OtherPolitical 152 172	our responsibilities
+T8	Actor 264 265	I
+T9	Actor 174 177	our
+T10	Institution 198 209	West Berlin
+T11	OtherPolitical 214 224	our rights
+T12	OtherPolitical 229 249	our responsibilities
+T13	OtherPolitical 63 73	our rights
+T14	OtherPolitical 78 98	our responsibilities
+R1	Support Arg1:T4 Arg2:T5	
+R2	Support Arg1:T4 Arg2:T6	
+R3	Support Arg1:T4 Arg2:T7	
+R4	Support Arg1:T9 Arg2:T10	
+R5	Support Arg1:T9 Arg2:T11	
+R6	Support Arg1:T9 Arg2:T12	
+T15	Actor 401 402	I
+T16	OtherPolitical 564 574	our policy
+T17	OtherPolitical 579 592	our agreement
+T18	Actor 850 851	I
+T19	Institution 620 632	East Germany
+T20	Actor 739 750	the Soviets
+T21	Actor 752 763	the Soviets
+T23	OtherPolitical 663 677	free elections
+R7	Support Arg1:T19 Arg2:T23	
+T24	Attainment 639 650	be reunited
+R8	Enable Arg1:T23 Arg2:T24	
+R9	Enable Arg1:T17 Arg2:T24	
+R10	Enable Arg1:T16 Arg2:T24	
+R11	Oppose Arg1:T20 Arg2:T23	
+T25	Implementation 795 842	negotiation between these two separate Germanys
+R12	Support Arg1:T21 Arg2:T25	
+R13	Oppose Arg1:T18 Arg2:T25	
+T26	Actor 923 926	our
+T27	Actor 939 949	our allies
+T28	OtherPolitical 1032 1046	free elections
+T22	Attainment 973 1000	the uniting of East Germany
+R14	Enable Arg1:T28 Arg2:T22	
+T29	OtherPolitical 303 317	a peace treaty
+T30	Institution 416 427	West Berlin
+T31	OtherPolitical 432 442	our rights
+T32	OtherPolitical 447 467	our responsibilities
+T33	Actor 509 512	you
+T34	OtherPolitical 362 371	solutions
+T35	OtherPolitical 373 385	propositions
+R15	Enable Arg1:T34 Arg2:T29	
+R16	Enable Arg1:T35 Arg2:T29	
+T36	Attainment 520 541	a constructive manner
+R17	Achieve Arg1:T33 Arg2:T36	

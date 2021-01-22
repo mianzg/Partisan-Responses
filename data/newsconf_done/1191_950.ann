@@ -1,0 +1,12 @@
+T1	Actor 21 22	I
+T2	Actor 33 36	you
+R1	Interact Arg1:T1 Arg2:T2	
+T3	OtherPolitical 43 57	any engagement
+T4	OtherPolitical 61 89	any other kind of commitment
+T5	Actor 90 91	I
+R2	Act Arg1:T5 Arg2:T3	
+R3	Act Arg1:T5 Arg2:T4	
+T6	Attainment 146 183	to make certain of the accomplishment
+R4	Disable Arg1:T4 Arg2:T6	
+R5	Disable Arg1:T3 Arg2:T6	
+T7	Actor 0 13	THE PRESIDENT

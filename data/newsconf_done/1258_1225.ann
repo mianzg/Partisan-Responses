@@ -1,0 +1,19 @@
+T1	Actor 21 22	I
+T2	Actor 0 13	THE PRESIDENT
+T3	Actor 40 68	anybody in the United States
+T4	Attainment 133 152	our monetary system
+R1	Interact Arg1:T1 Arg2:T3	
+R2	Achieve Arg1:T3 Arg2:T4	
+T5	Actor 160 163	you
+T6	Implementation 175 228	a strict application of the conflict-of-interest laws
+R3	Support Arg1:T5 Arg2:T6	
+T7	Actor 230 233	you
+T8	Attainment 245 293	a situation that no one of substance could serve
+R4	Enable Arg1:T6 Arg2:T8	
+R5	Achieve Arg1:T7 Arg2:T8	
+T9	Actor 324 325	I
+T10	Actor 338 341	you
+T11	Implementation 348 372	appoint bankers entirely
+R6	Oppose Arg1:T9 Arg2:T11	
+R7	Support Arg1:T10 Arg2:T11	
+R8	Oppose Arg1:T9 Arg2:T10	

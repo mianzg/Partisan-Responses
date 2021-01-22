@@ -1,0 +1,13 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 22	I
+T3	Actor 80 81	I
+T4	Implementation 98 132	to be just as truthful as I can be
+R1	Support Arg1:T3 Arg2:T4	
+T5	Actor 134 135	I
+T6	Actor 150 151	I
+R2	Interact Arg1:T5 Arg2:T6	
+T7	Actor 194 263	people who would classify themselves probably as my political enemies
+T8	Actor 466 467	I
+T9	Actor 479 548	people who would classify themselves probably as my political enemies
+T10	Actor 560 561	I
+T11	Actor 349 418	people who would classify themselves probably as my political enemies

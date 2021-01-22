@@ -1,0 +1,32 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 180 182	us
+T3	Actor 36 37	I
+T4	Actor 194 195	I
+T5	Implementation 207 218	to minimize
+R1	Oppose Arg1:T4 Arg2:T5	
+T6	Actor 93 113	the Attorney General
+T7	Actor 224 225	I
+T8	Actor 851 852	I
+T9	Actor 1020 1022	us
+T10	Implementation 1033 1068	everything that is humanly possible
+R2	Support Arg1:T9 Arg2:T10	
+T11	Actor 246 247	I
+R3	Interact Arg1:T7 Arg2:T11	
+T12	Attainment 264 304	the danger that the United States incurs
+R4	Enable Arg1:T5 Arg2:T12	
+T13	Actor 320 378	these people in Government or in other sensitive positions
+T14	Attainment 437 463	the United States security
+T15	Actor 469 470	I
+T16	Institution 483 497	the Government
+T17	Institution 502 528	Government proper sections
+T18	Implementation 559 600	doing everything that is humanly possible
+R5	Support Arg1:T17 Arg2:T18	
+R6	Support Arg1:T16 Arg2:T18	
+T19	Actor 896 920	individuals of this kind
+T20	OtherPolitical 881 885	that
+R7	Oppose Arg1:T8 Arg2:T20	
+T21	Actor 922 923	I
+T22	OtherPolitical 975 995	these investigations
+T23	OtherPolitical 1000 1018	these examinations
+R8	Support Arg1:T21 Arg2:T22	
+R9	Support Arg1:T21 Arg2:T23	

@@ -1,0 +1,19 @@
+T1	Actor 15 17	we
+T2	Institution 49 60	East Berlin
+T3	Actor 93 95	we
+T4	Actor 117 119	we
+T5	Institution 219 239	East and West Berlin
+T6	Actor 0 13	THE PRESIDENT
+T7	Actor 19 20	I
+T8	OtherPolitical 142 144	it
+R1	Interact Arg1:T3 Arg2:T4	
+R2	Oppose Arg1:T4 Arg2:T8	
+T9	OtherPolitical 186 199	communication
+T10	Actor 321 337	private citizens
+T11	Actor 268 308	those who have official responsibilities
+T12	OtherPolitical 409 423	the agreements
+T13	Attainment 522 543	access to West Berlin
+T14	Actor 449 452	our
+R3	Achieve Arg1:T14 Arg2:T13	
+T15	OtherPolitical 363 365	it
+R4	Disable Arg1:T15 Arg2:T12	

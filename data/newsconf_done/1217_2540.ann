@@ -1,0 +1,30 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 30 31	I
+T4	Institution 100 119	moderate government
+R1	Support Arg1:T3 Arg2:T4	
+R2	Interact Arg1:T2 Arg2:T3	
+T5	Actor 137 138	I
+T6	Actor 152 168	most Republicans
+R3	Interact Arg1:T5 Arg2:T6	
+T7	OtherPolitical 199 210	what I mean
+R4	Support Arg1:T6 Arg2:T7	
+T8	OtherPolitical 224 228	this
+R5	Support Arg1:T6 Arg2:T8	
+T9	Actor 279 288	everybody
+T10	Actor 350 353	You
+T11	Actor 501 507	anyone
+T12	Implementation 299 336	to take a middle-of-the-road position
+R6	Support Arg1:T9 Arg2:T12	
+T13	OtherPolitical 247 267	a difficult position
+T14	Implementation 366 391	to attack from both sides
+R7	Act Arg1:T10 Arg2:T14	
+T15	Actor 439 442	you
+T16	Implementation 450 476	to take it from both sides
+R8	Support Arg1:T15 Arg2:T16	
+T17	OtherPolitical 536 555	this administration
+T18	Implementation 585 621	two platforms written by Republicans
+T19	Implementation 633 664	six State of the Union Messages
+T20	OtherPolitical 678 708	budgetary and economic reports
+T21	Actor 745 747	he
+R9	Oppose Arg1:T11 Arg2:T17	

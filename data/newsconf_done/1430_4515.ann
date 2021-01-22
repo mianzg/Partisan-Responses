@@ -1,0 +1,4 @@
+T1	Actor 40 43	you
+T2	Actor 66 68	me
+R1	Interact Arg1:T1 Arg2:T2	
+T3	Actor 0 13	THE PRESIDENT

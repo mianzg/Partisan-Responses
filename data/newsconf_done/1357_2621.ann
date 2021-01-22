@@ -1,0 +1,10 @@
+T1	Actor 0 13	THE PRESIDENT
+T3	Actor 15 18	You
+T4	Actor 99 102	You
+T5	Actor 142 143	I
+T6	OtherPolitical 120 132	some details
+R1	Achieve Arg1:T4 Arg2:T6	
+R2	Act Arg1:T5 Arg2:T6	
+T7	Actor 51 54	you
+T2	Implementation 61 97	to take to the Department of Defense
+R3	Support Arg1:T7 Arg2:T2	

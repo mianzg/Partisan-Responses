@@ -1,0 +1,43 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 390 391	I
+T4	Actor 506 507	I
+T5	Actor 61 63	we
+T6	Actor 113 115	we
+T7	Attainment 265 288	a speculation and doubt
+T8	OtherPolitical 235 250	To do otherwise
+R1	Enable Arg1:T8 Arg2:T7	
+T9	Actor 297 298	I
+T10	Implementation 413 424	studying it
+R2	Support Arg1:T3 Arg2:T10	
+T11	Actor 451 452	I
+T12	Actor 459 461	we
+R3	Interact Arg1:T11 Arg2:T12	
+T13	Attainment 471 489	a pretty tough one
+R4	Achieve Arg1:T12 Arg2:T13	
+T14	Implementation 513 524	put one man
+T15	Implementation 529 566	given one man the sole responsibility
+R5	Support Arg1:T4 Arg2:T14	
+R6	Support Arg1:T4 Arg2:T15	
+T16	Attainment 575 597	the areas of agreement
+R7	Enable Arg1:T15 Arg2:T16	
+R8	Enable Arg1:T14 Arg2:T16	
+T17	Actor 661 663	we
+T18	Actor 748 750	we
+T19	Implementation 30 53	to make public anything
+R9	Oppose Arg1:T2 Arg2:T19	
+T20	Implementation 69 98	got we own minds crystallized
+R10	Support Arg1:T5 Arg2:T20	
+T21	Implementation 121 191	searched out all of the pitfalls in such discussions and such programs
+R11	Support Arg1:T6 Arg2:T21	
+T22	Implementation 207 233	to stand back of something
+R12	Support Arg1:T6 Arg2:T22	
+T23	Actor 313 340	any two people in the world
+T24	Implementation 355 388	this subject in the world details
+R13	Support Arg1:T23 Arg2:T24	
+R14	Interact Arg1:T9 Arg2:T23	
+T25	OtherPolitical 621 638	a basic principle
+T26	OtherPolitical 640 654	a basic method
+T27	Implementation 700 742	the real foundation of the whole structure
+R15	Support Arg1:T18 Arg2:T27	
+T28	OtherPolitical 681 683	it

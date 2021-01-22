@@ -1,0 +1,5 @@
+T1	OtherPolitical 39 48	reduction
+T2	Actor 54 55	I
+T3	OtherPolitical 78 86	any such
+R1	Oppose Arg1:T2 Arg2:T3	
+T4	Actor 0 13	THE PRESIDENT

@@ -1,0 +1,17 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 22	The men
+T3	Implementation 72 102	to be selected by a convention
+R1	Support Arg1:T2 Arg2:T3	
+T4	Actor 104 105	I
+T5	Actor 115 118	you
+R2	Interact Arg1:T4 Arg2:T5	
+T6	Implementation 119 138	a whole list of men
+R3	Act Arg1:T4 Arg2:T6	
+T7	Implementation 174 210	carrying very heavy responsibilities
+T8	Implementation 229 268	the great middle-of-the-road philosophy
+T9	Actor 274 275	I
+R4	Support Arg1:T9 Arg2:T8	
+T10	Institution 330 350	the Republican Party
+T11	Actor 355 371	any of those men
+T12	Actor 413 415	my
+R5	Support Arg1:T12 Arg2:T11	

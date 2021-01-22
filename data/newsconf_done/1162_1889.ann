@@ -1,0 +1,78 @@
+T1	Actor 19 20	I
+T2	Actor 29 30	I
+T3	Actor 41 42	I
+T4	Actor 154 155	I
+T5	Actor 255 298	the leaders of House and Senate Republicans
+T6	Actor 362 405	the leaders of House and Senate Republicans
+T7	Actor 7716 7734	the Vice President
+T8	Actor 7223 7224	I
+T9	Actor 7238 7241	you
+T10	Actor 6923 6924	I
+T11	Actor 7283 7284	I
+T12	Actor 7597 7598	I
+T13	Actor 7548 7549	I
+T14	Actor 6977 6978	I
+T15	Actor 7178 7180	we
+T16	Actor 6785 6787	we
+T17	Actor 6845 6847	we
+T18	Actor 6892 6894	we
+T19	Actor 6733 6735	we
+T20	Actor 6751 6752	I
+T21	Actor 6464 6466	we
+T22	Actor 6267 6269	we
+T23	Actor 5897 5899	we
+T24	Actor 5595 5597	we
+T25	Actor 5516 5517	I
+T26	Actor 5340 5342	we
+T27	Actor 4936 4939	you
+T28	Actor 5014 5017	you
+T29	Actor 4560 4574	General Walker
+T30	Actor 4236 4237	I
+T31	Actor 4258 4276	Secretary McNamara
+T32	Actor 4332 4350	Secretary McNamara
+T33	Actor 4361 4375	General Walker
+T34	Actor 3856 3870	General Walker
+T35	Actor 3881 3899	Secretary McNamara
+T36	Actor 3872 3873	I
+T37	Actor 3910 3928	Secretary McNamara
+T38	Actor 3742 3743	I
+T39	Actor 3464 3465	I
+T40	Actor 3476 3479	you
+T41	Actor 0 13	THE PRESIDENT
+T42	Actor 100 106	Castro
+T43	Actor 118 143	some members of the press
+R1	Interact Arg1:T42 Arg2:T43	
+T44	Actor 164 189	some members of the press
+R2	Interact Arg1:T4 Arg2:T44	
+T45	Implementation 200 213	a better idea
+R3	Support Arg1:T44 Arg2:T45	
+T46	Actor 240 253	Mr. President
+T47	Actor 304 306	us
+R4	Interact Arg1:T5 Arg2:T47	
+T48	Actor 347 360	Mr. President
+T49	Implementation 421 445	special study committees
+R5	Support Arg1:T6 Arg2:T49	
+T50	Attainment 449 539	the effect of automation and technological improvements in agriculture as well as industry
+R6	Enable Arg1:T49 Arg2:T50	
+T51	Actor 545 548	you
+T52	Actor 561 587	your Democrats in Congress
+R7	Interact Arg1:T51 Arg2:T52	
+T53	Implementation 608 624	study committees
+R8	Support Arg1:T52 Arg2:T53	
+T54	Actor 629 632	you
+T55	Actor 638 664	your Democrats in Congress
+T56	Implementation 685 701	study committees
+R9	Support Arg1:T54 Arg2:T55	
+R10	Support Arg1:T55 Arg2:T56	
+T57	Actor 706 719	THE PRESIDENT
+T58	Actor 727 728	I
+T59	Institution 746 771	the Subcommittee on Labor
+T60	Institution 773 817	a subcommittee headed by Congressman Holland
+T61	Institution 822 834	Pennsylvania
+T62	Implementation 845 863	conducting studies
+R11	Support Arg1:T59 Arg2:T62	
+R12	Support Arg1:T60 Arg2:T62	
+T63	Attainment 867 891	the effect of automation
+R13	Enable Arg1:T62 Arg2:T63	
+T64	Attainment 922 961	the effect of automation on agriculture
+T65	Actor 963 964	I

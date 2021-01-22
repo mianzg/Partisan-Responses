@@ -1,0 +1,47 @@
+T2	Actor 889 894	Maury
+T3	Actor 927 936	a general
+T4	Actor 899 912	a Congressman
+T5	Actor 856 859	you
+T6	Actor 850 851	I
+T7	Implementation 860 887	promoted Maury to a general
+R1	Support Arg1:T5 Arg2:T7	
+R2	Interact Arg1:T6 Arg2:T5	
+T8	Actor 838 841	you
+T9	Actor 825 826	I
+R3	Interact Arg1:T9 Arg2:T8	
+T10	Actor 235 253	General Eisenhower
+T12	Actor 0 13	THE PRESIDENT
+T13	Actor 61 79	General Eisenhower
+T14	Actor 84 100	the labor people
+T15	Actor 106 107	I
+T1	Implementation 124 178	interfering with what General Eisenhower's wants to do
+R4	Oppose Arg1:T15 Arg2:T1	
+T16	Actor 180 198	General Eisenhower
+T17	Actor 208 209	I
+T18	Actor 215 218	you
+T19	Actor 259 271	a free agent
+T20	Actor 276 292	a friend of mine
+T21	Actor 303 316	Mr. President
+T22	OtherPolitical 327 335	a report
+T23	Actor 349 350	I
+T24	Actor 642 645	you
+T25	Actor 594 601	friends
+T26	Implementation 687 710	the loyalist delegation
+T27	Institution 730 737	Chicago
+T11	Implementation 747 788	the delegation headed by Governor Shivers
+T28	Implementation 661 685	Mr. President delegation
+T29	Actor 552 565	Mr. President
+R5	Interact Arg1:T29 Arg2:T25	
+T30	Actor 610 623	Mr. President
+R6	Interact Arg1:T30 Arg2:T24	
+T31	Actor 794 807	THE PRESIDENT
+T32	OtherPolitical 368 376	a report
+T33	OtherPolitical 397 405	a report
+T34	Actor 407 409	we
+T35	OtherPolitical 439 443	this
+R7	Act Arg1:T34 Arg2:T35	
+T36	Actor 459 479	a gentleman in Texas
+T37	Actor 495 513	Mr. Maury Maverick
+T38	Actor 520 521	l
+T39	Actor 530 533	you
+R8	Interact Arg1:T38 Arg2:T39	

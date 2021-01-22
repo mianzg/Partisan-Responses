@@ -1,0 +1,7 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 59 63	some
+T3	Actor 69 70	I
+T4	Actor 15 39	Everybody that I thought
+T5	Actor 44 53	my friend
+R1	Interact Arg1:T4 Arg2:T5	
+R2	Interact Arg1:T3 Arg2:T2	

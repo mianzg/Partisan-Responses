@@ -1,0 +1,20 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Attainment 429 447	a national problem
+T4	Institution 347 369	the Federal Government
+T5	Institution 386 408	the Federal Government
+T6	Institution 67 78	all America
+T7	Actor 58 59	I
+T8	OtherPolitical 47 56	something
+R1	Support Arg1:T6 Arg2:T8	
+T9	Actor 115 117	he
+T10	Implementation 127 164	to prepare he initial recommendations
+R2	Support Arg1:T9 Arg2:T10	
+T11	Actor 166 167	I
+T12	Actor 184 185	I
+T13	Actor 259 261	us
+T14	OtherPolitical 235 238	one
+T15	Actor 267 291	every one of all America
+T16	Implementation 299 313	think about it
+R3	Support Arg1:T15 Arg2:T16	
+R4	Achieve Arg1:T13 Arg2:T14	

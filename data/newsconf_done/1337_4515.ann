@@ -1,0 +1,5 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 57 58	I
+T3	OtherPolitical 68 75	the tax
+R1	Act Arg1:T2 Arg2:T3	
+T4	Implementation 97 107	excise tax

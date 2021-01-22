@@ -1,0 +1,53 @@
+T1	Actor 859 872	Mr. President
+T2	Implementation 832 854	Lawrence River project
+T3	Actor 0 13	THE PRESIDENT
+T4	Actor 43 56	THE PRESIDENT
+T5	Actor 19 20	I
+T6	OtherPolitical 40 42	it
+R1	Act Arg1:T5 Arg2:T6	
+T7	Actor 67 80	Mr. President
+T8	Actor 85 88	you
+T9	Actor 95 111	Averell Harriman
+T10	Actor 116 138	any potential Democrat
+T11	Actor 249 262	Mr. President
+T12	Actor 380 383	You
+T13	Actor 692 705	Alan S. Emory
+T14	Institution 707 716	Watertown
+T15	Institution 724 735	Daily Times
+T16	Actor 737 750	Mr. President
+T17	Actor 784 787	you
+T18	Actor 797 820	some Canadian officials
+R2	Interact Arg1:T17 Arg2:T18	
+T19	Actor 644 657	Mr. President
+T20	Actor 440 441	I
+T21	Actor 368 378	the voters
+T22	Actor 337 359	any potential Democrat
+T23	Attainment 160 177	political "moxey"
+R3	Interact Arg1:T8 Arg2:T9	
+R4	Interact Arg1:T8 Arg2:T10	
+R5	Achieve Arg1:T10 Arg2:T23	
+R6	Achieve Arg1:T9 Arg2:T23	
+T24	Actor 183 186	you
+R7	Achieve Arg1:T24 Arg2:T23	
+T25	Actor 214 224	Eisenhower
+T26	Attainment 208 213	"Ike"
+R8	Achieve Arg1:T25 Arg2:T26	
+R9	Achieve Arg1:T9 Arg2:T26	
+R10	Achieve Arg1:T10 Arg2:T26	
+T27	Actor 316 332	Averell Harriman
+R11	Interact Arg1:T22 Arg2:T21	
+R12	Interact Arg1:T27 Arg2:T21	
+T28	Implementation 393 438	to go out and sell the voters a bill of goods
+R13	Support Arg1:T12 Arg2:T28	
+T29	Implementation 442 459	went 31,700 miles
+R14	Support Arg1:T20 Arg2:T29	
+T30	Implementation 465 485	made 355 appearances
+R15	Support Arg1:T20 Arg2:T30	
+T31	Implementation 491 516	spoke to 7 million people
+R16	Support Arg1:T20 Arg2:T31	
+T32	Implementation 522 540	saw 7 million more
+R17	Support Arg1:T20 Arg2:T32	
+T33	Implementation 542 583	spoke to 30 million people over the radio
+T34	Implementation 589 626	sold 7 million people a bill of goods
+R18	Support Arg1:T20 Arg2:T33	
+R19	Support Arg1:T20 Arg2:T34	

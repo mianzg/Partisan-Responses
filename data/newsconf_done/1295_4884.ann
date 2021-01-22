@@ -1,0 +1,21 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 349 350	I
+T4	OtherPolitical 357 359	it
+T5	OtherPolitical 42 50	progress
+T6	Actor 61 81	the American Indians
+R1	Achieve Arg1:T6 Arg2:T5	
+T7	Implementation 85 124	the progressive granting of citizenship
+R2	Enable Arg1:T7 Arg2:T5	
+R3	Support Arg1:T6 Arg2:T7	
+T8	Implementation 169 188	The particular case
+T9	Actor 189 192	you
+R4	Act Arg1:T9 Arg2:T8	
+T10	Actor 203 204	I
+T11	Actor 223 224	I
+T12	OtherPolitical 235 237	it
+R5	Support Arg1:T11 Arg2:T12	
+T13	Actor 250 251	I
+T14	Implementation 263 286	your implicit criticism
+R6	Support Arg1:T13 Arg2:T14	
+T15	OtherPolitical 330 334	they

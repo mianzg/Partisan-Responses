@@ -1,0 +1,69 @@
+T1	Actor 1201 1204	You
+T2	Actor 1182 1199	Senator Goldwater
+T3	Actor 922 939	Senator Goldwater
+T4	Actor 971 972	I
+T5	Actor 15 16	I
+T6	Actor 0 13	THE PRESIDENT
+T7	OtherPolitical 26 39	that question
+R1	Act Arg1:T5 Arg2:T7	
+T8	Actor 59 60	I
+T9	Actor 73 74	I
+T10	Actor 85 88	you
+R2	Interact Arg1:T9 Arg2:T10	
+T11	Actor 103 113	all of you
+T12	Actor 131 134	you
+T13	Actor 155 156	I
+T14	Actor 172 173	I
+T15	Implementation 184 202	to go to the ranch
+R3	Act Arg1:T14 Arg2:T15	
+T16	Actor 217 218	I
+T17	Actor 246 249	you
+R4	Interact Arg1:T16 Arg2:T17	
+T18	Actor 250 251	I
+T19	Actor 272 273	I
+T20	OtherPolitical 279 287	no plans
+R5	Act Arg1:T19 Arg2:T20	
+T21	Attainment 288 296	to do it
+R6	Enable Arg1:T20 Arg2:T21	
+T22	Actor 298 299	I
+T23	Actor 311 314	you
+R7	Interact Arg1:T22 Arg2:T23	
+T24	Actor 330 331	I
+T25	Actor 622 625	You
+T26	Actor 798 815	Senator Goldwater
+T27	Actor 838 839	I
+T28	Implementation 851 873	to have any connection
+R8	Oppose Arg1:T27 Arg2:T28	
+T29	Actor 910 913	You
+R9	Interact Arg1:T29 Arg2:T3	
+T30	Implementation 946 969	Senator Goldwater views
+T31	Actor 1057 1064	anybody
+T32	Actor 1068 1085	Senator Goldwater
+T33	Actor 1096 1113	Senator Goldwater
+T34	Actor 1118 1119	I
+T35	Actor 1124 1125	I
+T36	Actor 1134 1135	I
+T37	Actor 546 547	I
+T38	Actor 539 542	you
+T39	Actor 526 527	I
+R10	Interact Arg1:T39 Arg2:T38	
+T40	Actor 490 493	you
+T41	Implementation 258 266	be there
+R11	Act Arg1:T18 Arg2:T41	
+T42	Implementation 336 356	George's11 briefings
+R12	Act Arg1:T24 Arg2:T42	
+T43	OtherPolitical 449 458	briefings
+T44	Actor 468 478	George's11
+R13	Interact Arg1:T44 Arg2:T40	
+T45	Actor 497 507	George's11
+T46	Implementation 664 683	group against group
+T47	Implementation 685 710	religion against religion
+T48	Implementation 716 733	race against race
+T49	Implementation 784 796	his campaign
+T50	Actor 823 836	THE PRESIDENT
+T51	Implementation 973 1034	have expressed mine positively, affirmatively, and completely
+R14	Support Arg1:T4 Arg2:T51	
+R15	Interact Arg1:T34 Arg2:T35	
+R16	Interact Arg1:T35 Arg2:T36	
+T52	Actor 1142 1151	my mother
+R17	Support Arg1:T36 Arg2:T52	

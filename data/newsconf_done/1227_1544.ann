@@ -1,0 +1,19 @@
+T1	Actor 259 260	I
+T2	OtherPolitical 273 294	what anyone else does
+R1	Oppose Arg1:T1 Arg2:T2	
+T3	Actor 296 297	I
+T4	Implementation 302 332	to be guided by rule of reason
+R2	Support Arg1:T3 Arg2:T4	
+T5	Actor 198 199	I
+T6	Actor 79 94	you people here
+T7	Actor 111 126	you people here
+T8	Actor 137 139	me
+R3	Interact Arg1:T7 Arg2:T8	
+T9	OtherPolitical 140 148	a heifer
+R4	Act Arg1:T7 Arg2:T9	
+T10	Actor 154 172	the lady reporters
+T11	Actor 15 16	I
+T12	Implementation 37 64	putting it in just that way
+R5	Oppose Arg1:T11 Arg2:T12	
+T13	Actor 0 13	THE PRESIDENT
+T14	OtherPolitical 212 219	heifers

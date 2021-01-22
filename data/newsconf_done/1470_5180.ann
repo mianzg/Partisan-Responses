@@ -1,0 +1,63 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 28 41	Mr. President
+T3	Actor 49 52	you
+T4	Actor 64 81	Senator Joseph R.
+R1	Interact Arg1:T3 Arg2:T4	
+T6	Actor 160 173	Mr. President
+T5	Actor 121 131	Communists
+T7	Institution 135 155	the State Department
+T8	Implementation 82 102	McCarthy's statement
+T9	Actor 175 176	I
+T10	Institution 183 203	the State Department
+T11	Actor 269 282	Mr. President
+T12	Actor 298 311	Mr. President
+T13	Institution 392 400	the Hill
+T14	Implementation 341 368	the Atlantic Union proposal
+T15	Actor 321 325	your
+R2	Act Arg1:T15 Arg2:T14	
+T16	Actor 405 419	Mr. President.
+T17	Actor 420 421	I
+T18	OtherPolitical 450 452	it
+T19	OtherPolitical 467 469	it
+R3	Act Arg1:T17 Arg2:T18	
+T20	Actor 471 472	I
+T21	Actor 1580 1581	I
+T22	OtherPolitical 1573 1578	peace
+T23	Implementation 1513 1548	to talk with anybody on any subject
+T24	Actor 1499 1502	our
+R4	Support Arg1:T24 Arg2:T23	
+R5	Enable Arg1:T23 Arg2:T22	
+T25	Implementation 1603 1640	any showmanship to carry that through
+R6	Oppose Arg1:T21 Arg2:T25	
+T26	Actor 539 541	We
+T27	Implementation 508 537	to press a thing of that sort
+R7	Oppose Arg1:T20 Arg2:T27	
+T28	Actor 600 613	Mr. President
+T29	Actor 618 621	you
+T30	Actor 844 857	Mr. President
+T31	Actor 867 870	you
+T32	Implementation 804 838	to negotiate on the atomic control
+T33	Actor 785 787	we
+R8	Support Arg1:T33 Arg2:T32	
+T34	Actor 746 778	the Assistant Secretary of State
+T35	Implementation 656 684	propaganda-wise or otherwise
+R9	Support Arg1:T29 Arg2:T35	
+T36	Implementation 686 715	a somewhat more dramatic move
+R10	Support Arg1:T29 Arg2:T36	
+T37	Institution 721 741	the State Department
+T38	OtherPolitical 547 579	other things much more important
+R11	Achieve Arg1:T26 Arg2:T38	
+T39	Institution 885 985	The negotiating machinery in the United Nations and our Ambassadors in all the capitals of the world
+T40	Implementation 1003 1042	to discuss any questions with any state
+R12	Support Arg1:T39 Arg2:T40	
+T41	Institution 1048 1148	The negotiating machinery in the United Nations and our Ambassadors in all the capitals of the world
+T42	Institution 1165 1265	The negotiating machinery in the United Nations and our Ambassadors in all the capitals of the world
+T43	Actor 1307 1310	our
+T44	Implementation 1322 1348	walked out of any meetings
+R13	Oppose Arg1:T43 Arg2:T44	
+T45	Actor 1350 1353	our
+T46	Implementation 1365 1384	used the veto power
+T47	Attainment 1415 1433	peace in the world
+R14	Oppose Arg1:T45 Arg2:T46	
+R15	Disable Arg1:T46 Arg2:T47	
+T48	Actor 1445 1448	you

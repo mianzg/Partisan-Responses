@@ -1,0 +1,25 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 25 26	I
+R1	Interact Arg1:T2 Arg2:T3	
+T4	Institution 129 146	the Gulf of Aqaba
+T5	Actor 321 323	we
+T6	Actor 532 542	Mr. Reston
+T7	Actor 544 545	I
+T8	Actor 571 572	I
+T9	Institution 586 606	the State Department
+T10	Actor 331 333	we
+T11	Institution 107 122	the World Court
+T12	Actor 190 191	I
+T13	Institution 230 250	the Straits of Tiran
+T14	Institution 354 376	other maritime nations
+T15	Institution 378 410	other principal maritime nations
+R2	Interact Arg1:T5 Arg2:T10	
+T16	Implementation 412 463	to declare this an open, an international, waterway
+R3	Support Arg1:T10 Arg2:T16	
+R4	Support Arg1:T14 Arg2:T16	
+R5	Support Arg1:T15 Arg2:T16	
+R6	Interact Arg1:T7 Arg2:T8	
+R7	Support Arg1:T8 Arg2:T9	
+T17	Implementation 607 641	to see exactly what the steps were
+R8	Support Arg1:T8 Arg2:T17	

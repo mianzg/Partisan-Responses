@@ -1,0 +1,370 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Institution 23 43	the Republican Party
+T4	Institution 48 68	the Republican Party
+T5	Institution 96 116	the Democratic Party
+T6	Actor 244 245	I
+T7	Actor 370 371	I
+T8	Institution 389 409	the Republican Party
+T9	Implementation 416 439	any business government
+T10	Implementation 441 461	any labor government
+T11	Implementation 463 481	any big government
+R1	Oppose Arg1:T7 Arg2:T9	
+R2	Oppose Arg1:T7 Arg2:T10	
+R3	Oppose Arg1:T7 Arg2:T11	
+R4	Support Arg1:T8 Arg2:T9	
+R5	Support Arg1:T8 Arg2:T10	
+R6	Support Arg1:T8 Arg2:T11	
+T12	Actor 532 546	all the people
+T13	Implementation 7843 7866	The first consideration
+T14	Actor 2648 2650	We
+T15	Actor 2855 2857	We
+T16	Actor 2898 2900	We
+T17	Actor 2447 2448	I
+T18	Actor 1359 1361	We
+T19	Actor 1640 1663	All of us in government
+T20	Actor 1669 1692	all of you in the press
+T21	Actor 548 549	I
+T22	Actor 605 606	I
+T23	Actor 826 828	we
+T24	Actor 961 964	you
+T25	Actor 1058 1059	I
+T26	Actor 990 991	I
+T27	Actor 668 671	you
+T28	Institution 691 701	Government
+T29	Actor 725 739	the workingman
+T30	Actor 873 874	I
+T31	Institution 941 956	all the country
+T32	Attainment 1377 1401	the complete destruction
+T33	Implementation 1405 1419	inner conflict
+R7	Enable Arg1:T33 Arg2:T32	
+T34	Actor 1817 1819	we
+T35	Actor 1892 1894	we
+T36	Actor 1993 1994	I
+T37	Actor 2473 2474	I
+T38	Actor 2018 2021	you
+T39	Actor 2038 2039	I
+T40	Actor 2128 2129	I
+T41	Actor 6616 6617	I
+T42	Actor 6679 6680	I
+T43	Actor 7047 7048	I
+T44	Actor 7171 7172	I
+T45	Actor 3291 3292	I
+T46	Actor 3649 3651	we
+T47	Actor 6304 6306	We
+T48	Actor 6423 6425	We
+T49	Actor 2668 2670	We
+T50	Actor 7027 7028	I
+T51	Actor 6783 6784	I
+T52	Actor 6825 6826	I
+T53	Actor 6848 6849	I
+T54	Actor 7520 7522	we
+T55	Actor 3299 3302	you
+T56	Actor 3309 3321	Mrs. Johnson
+T57	Actor 4682 4683	I
+T58	Actor 5165 5166	I
+T59	Actor 4422 4424	We
+T60	Actor 4179 4180	I
+T61	Actor 4223 4225	We
+T62	Actor 4063 4080	Japanese-American
+T63	Actor 4085 4101	Chinese-American
+T64	Institution 3795 3809	the Government
+T65	Actor 6696 6699	you
+T66	Actor 6745 6748	you
+T67	Actor 6656 6659	you
+T68	Actor 6674 6677	you
+T69	Actor 6508 6510	we
+T70	Actor 6516 6518	we
+T71	Actor 6552 6554	we
+T72	Actor 6453 6455	We
+T73	Actor 4277 4279	We
+T74	Actor 4453 4505	all Americans of every race, religion, ethnic origin
+T75	Actor 7607 7609	we
+T76	Actor 7641 7643	we
+T77	Actor 7660 7663	you
+T78	Actor 7736 7750	the First Lady
+T79	Actor 6224 6227	you
+T80	Actor 6233 6235	us
+R8	Interact Arg1:T79 Arg2:T80	
+T81	Actor 5553 5554	I
+T82	Actor 5590 5592	we
+T83	Actor 5217 5219	we
+T84	Actor 7282 7294	Mrs. Johnson
+T85	Actor 7323 7335	Mrs. Johnson
+T86	Actor 7489 7491	we
+T87	Actor 5913 5915	we
+T88	Actor 5960 5962	we
+T89	Actor 5982 5983	I
+T90	Actor 7428 7440	Mrs. Johnson
+T91	Actor 7358 7370	Mrs. Johnson
+T92	Actor 7547 7549	we
+T93	Actor 6887 6890	you
+T94	Actor 6561 6563	we
+T95	Institution 121 141	the Republican Party
+T96	Implementation 837 850	work together
+R9	Support Arg1:T23 Arg2:T96	
+T97	Implementation 2867 2896	lock We in with We prejudices
+R10	Oppose Arg1:T15 Arg2:T97	
+T98	Implementation 4241 4283	to learn about each other and about We all
+R11	Support Arg1:T61 Arg2:T98	
+T99	Actor 4804 4806	we
+T100	Actor 4953 4955	we
+T101	OtherPolitical 565 578	my philosophy
+R12	Act Arg1:T21 Arg2:T101	
+T102	Implementation 638 667	the private enterprise system
+R13	Oppose Arg1:T27 Arg2:T28	
+T103	Attainment 1149 1173	the unity of this Nation
+T104	Implementation 200 242	any specialized segment of all the country
+T105	Implementation 85 160	to do what the Democratic Party and the Republican Party both think is best
+R14	Support Arg1:T3 Arg2:T105	
+R15	Support Arg1:T4 Arg2:T105	
+T106	OtherPolitical 483 485	It
+T107	Attainment 508 546	the best government for all the people
+R16	Enable Arg1:T106 Arg2:T107	
+R17	Support Arg1:T27 Arg2:T102	
+R18	Support Arg1:T27 Arg2:T29	
+T108	Institution 755 763	business
+R19	Oppose Arg1:T27 Arg2:T108	
+T109	Institution 787 795	business
+R20	Support Arg1:T27 Arg2:T109	
+T110	Institution 811 816	labor
+R21	Oppose Arg1:T27 Arg2:T110	
+T111	Implementation 886 908	a good deal of thought
+R22	Support Arg1:T30 Arg2:T111	
+T112	Attainment 912 956	a big problem that confronts all the country
+R23	Disable Arg1:T111 Arg2:T112	
+T113	Implementation 1005 1021	some of my ideas
+R24	Support Arg1:T26 Arg2:T113	
+T114	Attainment 1066 1102	this Nation's most important concern
+T115	Actor 1114 1116	we
+T116	OtherPolitical 1308 1331	religious denominations
+T117	Actor 1333 1346	ethnic stocks
+T118	OtherPolitical 1352 1357	races
+T119	Actor 1200 1210	any people
+T120	Implementation 1224 1247	building a free society
+R25	Support Arg1:T119 Arg2:T120	
+R26	Achieve Arg1:T18 Arg2:T32	
+T121	Institution 1423 1435	many nations
+T122	Institution 1444 1456	many nations
+T123	Implementation 1464 1481	race against race
+R27	Support Arg1:T122 Arg2:T123	
+T124	Implementation 1486 1511	religion against religion
+T125	Implementation 1513 1532	group against group
+R28	Support Arg1:T122 Arg2:T124	
+R29	Support Arg1:T122 Arg2:T125	
+T126	Implementation 1576 1595	class against class
+T127	Actor 1534 1552	What your question
+R30	Support Arg1:T127 Arg2:T126	
+T128	Actor 1698 1736	all responsible, constructive citizens
+T129	Implementation 1753 1792	a responsibility to see that it doesn't
+R31	Support Arg1:T19 Arg2:T129	
+R32	Support Arg1:T20 Arg2:T129	
+R33	Support Arg1:T128 Arg2:T129	
+T130	Implementation 1820 1847	build one society from many
+R34	Support Arg1:T34 Arg2:T130	
+T131	OtherPolitical 1802 1816	the great odds
+R35	Oppose Arg1:T34 Arg2:T131	
+T132	Implementation 1913 1991	to subordinate we loyalties to any one group to the loyalty to a greater group
+R36	Support Arg1:T35 Arg2:T132	
+R37	Interact Arg1:T36 Arg2:T38	
+T133	OtherPolitical 2054 2076	a great deal of detail
+R38	Oppose Arg1:T39 Arg2:T133	
+T134	Actor 2267 2285	General Eisenhower
+T135	Actor 2379 2387	Mr. Taft
+T136	Implementation 2405 2445	the business of the opposition to oppose
+R39	Oppose Arg1:T17 Arg2:T136	
+T137	Attainment 2138 2176	the leadership of the Democratic Party
+T138	Institution 2180 2190	the Senate
+T139	Actor 2204 2206	we
+T140	Actor 2242 2265	a very popular war hero
+R40	Interact Arg1:T139 Arg2:T140	
+R41	Interact Arg1:T139 Arg2:T134	
+T141	Actor 2287 2288	I
+T142	Implementation 2298 2319	Mr. Taft's philosophy
+R42	Oppose Arg1:T141 Arg2:T142	
+T143	Implementation 2332 2368	the duty of the opposition to oppose
+T144	Implementation 2487 2548	the business of the opposition to do what is best for America
+T145	OtherPolitical 2563 2582	our greater loyalty
+T146	Implementation 2906 2926	be prepared to learn
+R43	Support Arg1:T16 Arg2:T146	
+T147	Implementation 2939 2957	to change We minds
+T148	Implementation 2959 2997	to demonstrate compassion and humility
+R44	Support Arg1:T16 Arg2:T147	
+R45	Support Arg1:T16 Arg2:T148	
+T149	Actor 3005 3111	others of different faiths, different origins, different colors, different sections, different professions
+T150	Institution 3151 3164	this Republic
+T151	Implementation 3214 3248	reconciliation of different people
+R46	Support Arg1:T150 Arg2:T151	
+T152	Attainment 3254 3289	one national community of Americans
+R47	Enable Arg1:T151 Arg2:T152	
+T153	Institution 2762 2775	this Republic
+T154	Attainment 2831 2853	the brotherhood of man
+T155	OtherPolitical 2816 2823	justice
+T156	OtherPolitical 2801 2808	freedom
+T157	Implementation 2656 2712	subordinate We loyalty to any group to a greater loyalty
+R48	Support Arg1:T14 Arg2:T157	
+R49	Enable Arg1:T157 Arg2:T156	
+R50	Enable Arg1:T157 Arg2:T155	
+R51	Enable Arg1:T157 Arg2:T154	
+R52	Interact Arg1:T45 Arg2:T55	
+R53	Interact Arg1:T55 Arg2:T56	
+T158	Attainment 3614 3643	a real melting pot in America
+T159	Implementation 3708 3743	to look at the political life today
+R54	Support Arg1:T46 Arg2:T159	
+T160	Institution 3756 3766	the courts
+T161	Institution 3771 3809	the executive branch of the Government
+T162	Actor 3811 3835	the Congress-Protestants
+T163	Actor 3837 3846	Catholics
+T164	Actor 3848 3852	Jews
+T165	Actor 3854 3861	Negroes
+T166	Institution 3904 3917	this Republic
+T167	Actor 3937 3940	you
+T168	Actor 3863 3881	many men and women
+T169	Actor 3947 3962	Senator Pastore
+R55	Interact Arg1:T167 Arg2:T169	
+T170	Actor 3994 4009	Senator Pastore
+T171	Actor 4025 4037	an immigrant
+T172	Actor 4014 4037	the son of an immigrant
+T173	OtherPolitical 4144 4163	the public interest
+T174	OtherPolitical 4127 4139	both parties
+T175	OtherPolitical 4102 4112	minorities
+T176	Actor 3331 3343	Mrs. Johnson
+T177	Implementation 3370 3404	to send out agricultural bulletins
+R56	Act Arg1:T176 Arg2:T177	
+T178	Actor 3435 3447	Mrs. Johnson
+T179	Institution 3408 3419	my district
+T180	Actor 3461 3463	us
+T181	Implementation 3488 3612	the names indicated the names had more than a dozen different nationalities living in that one little central Texas district
+R57	Enable Arg1:T181 Arg2:T158	
+T182	Actor 4204 4221	any special group
+R58	Oppose Arg1:T60 Arg2:T182	
+T183	Institution 4338 4351	this Republic
+T184	OtherPolitical 4381 4386	unity
+T185	OtherPolitical 4407 4420	understanding
+R59	Enable Arg1:T98 Arg2:T184	
+R60	Enable Arg1:T98 Arg2:T185	
+T186	Actor 4356 4357	I
+T187	Actor 4396 4397	I
+T188	Implementation 4544 4600	the right and the opportunity to be treated as Americans
+T189	Actor 4521 4535	most Americans
+R61	Support Arg1:T189 Arg2:T188	
+T190	Implementation 4644 4681	to live by the law and under the law.
+R62	Support Arg1:T189 Arg2:T190	
+R63	Support Arg1:T74 Arg2:T188	
+R64	Support Arg1:T74 Arg2:T190	
+T191	OtherPolitical 4434 4447	a recognition
+R65	Act Arg1:T59 Arg2:T191	
+T192	Actor 4697 4714	all men and women
+R66	Interact Arg1:T57 Arg2:T192	
+T193	Implementation 4736 4799	to resist with all ours dedication the spiritual cancer of hate
+R67	Support Arg1:T192 Arg2:T193	
+R68	Support Arg1:T57 Arg2:T193	
+T194	Actor 4812 4818	others
+R69	Oppose Arg1:T99 Arg2:T194	
+T195	Attainment 4924 4940	we own integrity
+T196	Actor 4888 4890	we
+R70	Achieve Arg1:T196 Arg2:T195	
+T197	Actor 4820 4822	we
+T198	Actor 4844 4850	others
+R71	Oppose Arg1:T197 Arg2:T198	
+T199	Actor 4866 4882	the Almighty God
+R72	Interact Arg1:T197 Arg2:T199	
+T200	Actor 5201 5203	we
+T201	Implementation 5204 5240	proceed with we adventure in freedom
+R73	Support Arg1:T58 Arg2:T201	
+T202	Actor 4605 4638	members of our national community
+T203	Institution 4616 4638	our national community
+T204	Institution 5926 5933	Detroit
+T205	Attainment 4982 5003	poverty of the spirit
+T206	OtherPolitical 5035 5052	a nation's future
+T207	Attainment 5058 5078	the economic poverty
+T208	Actor 5084 5086	we
+T209	Actor 5114 5116	we
+T210	Actor 5135 5137	we
+T211	Implementation 5284 5333	political campaigns with a firm commitment to law
+R74	Support Arg1:T58 Arg2:T211	
+T212	Implementation 5335 5379	a just and efficient enforcement of all laws
+T213	Attainment 5474 5512	the vitality of we most striking ideal
+R75	Support Arg1:T58 Arg2:T212	
+T214	Implementation 5381 5446	a faith that a people which has learned to triumph over prejudice
+R76	Support Arg1:T58 Arg2:T214	
+R77	Enable Arg1:T214 Arg2:T213	
+R78	Enable Arg1:T211 Arg2:T213	
+R79	Enable Arg1:T212 Arg2:T213	
+T215	Actor 5611 5623	Jack Valenti
+T216	Actor 5755 5767	Jack Valenti
+T217	Actor 5636 5648	Jack Valenti
+T218	Actor 5690 5702	Jack Valenti
+T219	Actor 5868 5880	Jack Valenti
+T220	OtherPolitical 5938 5951	a brief visit
+R80	Act Arg1:T87 Arg2:T220	
+T221	OtherPolitical 5989 6009	a series of meetings
+R81	Act Arg1:T89 Arg2:T221	
+T222	Actor 6067 6068	I
+T223	Actor 6082 6085	you
+R82	Interact Arg1:T222 Arg2:T223	
+T224	Actor 6093 6106	THE PRESIDENT
+T225	Implementation 6123 6157	a very extensive speaking schedule
+R83	Support Arg1:T224 Arg2:T225	
+T226	Implementation 6257 6279	your campaign schedule
+R84	Act Arg1:T79 Arg2:T226	
+T227	Actor 6316 6317	I
+T228	OtherPolitical 6379 6421	the condition of the affairs of the Nation
+T229	Implementation 6349 6375	departures from Washington
+R85	Act Arg1:T47 Arg2:T229	
+T230	Implementation 6466 6489	to try to do that first
+R86	Act Arg1:T72 Arg2:T230	
+T231	Implementation 6431 6447	a job to do here
+R87	Act Arg1:T48 Arg2:T231	
+T232	Implementation 6529 6560	as many appearances as we think
+R88	Support Arg1:T70 Arg2:T232	
+T233	OtherPolitical 6587 6614	the interests of the Nation
+T234	Implementation 6636 6659	to be accessible to you
+R89	Support Arg1:T41 Arg2:T234	
+T235	Implementation 6661 6677	available to you
+R90	Support Arg1:T41 Arg2:T235	
+R91	Interact Arg1:T42 Arg2:T65	
+T236	OtherPolitical 6758 6766	the need
+T237	Implementation 6861 6872	to announce
+R92	Oppose Arg1:T53 Arg2:T237	
+T238	Implementation 6833 6842	determine
+R93	Oppose Arg1:T52 Arg2:T238	
+T239	Implementation 6790 6812	be at some certain day
+R94	Act Arg1:T51 Arg2:T239	
+T240	Actor 6896 6898	me
+R95	Interact Arg1:T93 Arg2:T240	
+T241	Implementation 6899 6932	cancelling and adjusting my plans
+R96	Support Arg1:T93 Arg2:T241	
+T242	Actor 7064 7067	you
+T243	Implementation 7078 7097	the change in plans
+R97	Support Arg1:T242 Arg2:T243	
+R98	Interact Arg1:T43 Arg2:T242	
+T244	Implementation 7099 7118	the details of them
+R99	Support Arg1:T242 Arg2:T244	
+T245	Actor 7124 7125	I
+T246	Implementation 7137 7169	to confuse you or frustrate .you
+R100	Oppose Arg1:T245 Arg2:T246	
+T247	Actor 7463 7465	we
+T248	OtherPolitical 7497 7509	those things
+R101	Act Arg1:T86 Arg2:T248	
+T249	OtherPolitical 7187 7191	them
+R102	Act Arg1:T44 Arg2:T249	
+T250	Actor 7227 7229	me
+T251	OtherPolitical 7242 7246	them
+R103	Act Arg1:T250 Arg2:T251	
+T252	Actor 7307 7312	Liz10
+R104	Interact Arg1:T84 Arg2:T252	
+T253	OtherPolitical 7408 7417	hard news
+T254	OtherPolitical 7485 7487	it
+R105	Act Arg1:T247 Arg2:T254	
+T255	Institution 7563 7570	Detroit
+T256	Actor 7583 7585	we
+R106	Interact Arg1:T76 Arg2:T77	
+T257	OtherPolitical 7654 7656	it
+R107	Act Arg1:T76 Arg2:T257	
+T258	Actor 7668 7695	Mrs. Elizabeth S. Carpenter
+T259	Actor 7697 7712	Press Secretary
+T260	Actor 7717 7731	Staff Director
+T261	Implementation 7788 7817	some development in the world
+T262	Actor 7834 7836	us
+T263	Implementation 7882 7947	running the country and carrying out the duties of the Presidency

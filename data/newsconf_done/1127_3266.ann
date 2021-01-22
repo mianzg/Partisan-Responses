@@ -1,0 +1,17 @@
+T1	Actor 15 16	I
+T2	Actor 237 238	I
+T4	Actor 50 51	I
+T5	Actor 0 13	THE PRESIDENT
+T6	Implementation 73 84	telephoning
+T7	Implementation 108 176	that conversation on the telephone between Mr. Khrushchev and myself
+T3	Attainment 196 226	a solution of the Cuban crisis
+R1	Oppose Arg1:T4 Arg2:T6	
+R2	Oppose Arg1:T4 Arg2:T7	
+R3	Enable Arg1:T6 Arg2:T3	
+R4	Enable Arg1:T7 Arg2:T3	
+T8	Attainment 264 281	a safer situation
+T9	Implementation 228 236	Teletype
+R5	Enable Arg1:T9 Arg2:T8	
+R6	Support Arg1:T2 Arg2:T9	
+T10	OtherPolitical 283 290	A phone
+T11	Implementation 317 325	Teletype

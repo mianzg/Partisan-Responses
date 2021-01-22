@@ -1,0 +1,16 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 113 114	I
+T3	Implementation 27 51	an agreement to limit It
+T4	OtherPolitical 74 81	success
+R1	Enable Arg1:T3 Arg2:T4	
+T5	Implementation 83 111	to limit It to certain areas
+R2	Enable Arg1:T5 Arg2:T4	
+T6	Actor 145 148	you
+T7	Actor 157 176	heads of government
+R3	Support Arg1:T6 Arg2:T7	
+T8	OtherPolitical 180 198	the one conference
+T9	Actor 200 201	I
+T10	OtherPolitical 214 239	the general conversations
+T11	Attainment 251 273	to go around the world
+R4	Enable Arg1:T10 Arg2:T11	
+R5	Support Arg1:T9 Arg2:T10	

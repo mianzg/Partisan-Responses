@@ -1,0 +1,19 @@
+T1	Actor 15 16	I
+T2	Actor 26 29	you
+T3	Actor 84 85	I
+T4	Actor 151 153	we
+T5	Actor 280 281	I
+T6	Actor 0 13	THE PRESIDENT
+R1	Interact Arg1:T1 Arg2:T2	
+T7	Implementation 35 58	last week's statement 1
+R2	Act Arg1:T2 Arg2:T7	
+T8	Implementation 63 82	the statement today
+R3	Act Arg1:T2 Arg2:T8	
+T9	Implementation 123 144	last week's statement
+T10	Implementation 167 218	the presence of offensive military missile capacity
+T11	Implementation 222 251	development of military bases
+T12	Implementation 256 273	other indications
+T13	Attainment 335 371	a change in the nature of the threat
+R4	Enable Arg1:T12 Arg2:T13	
+R5	Enable Arg1:T10 Arg2:T13	
+R6	Enable Arg1:T11 Arg2:T13	

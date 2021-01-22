@@ -1,0 +1,19 @@
+T1	Actor 392 394	us
+T2	Actor 369 378	everybody
+T3	Implementation 406 437	to take that into consideration
+R1	Support Arg1:T1 Arg2:T3	
+T4	Actor 21 22	I
+T5	Actor 0 13	THE PRESIDENT
+T6	Actor 61 63	us
+T7	Attainment 69 93	many allies in the world
+R2	Achieve Arg1:T6 Arg2:T7	
+T8	Implementation 124 154	a bilateral attempt to dictate
+T9	Actor 209 211	us
+R3	Oppose Arg1:T9 Arg2:T8	
+T10	Actor 253 255	us
+T11	Actor 265 267	us
+T12	Implementation 285 308	to clear with us allies
+R4	Support Arg1:T11 Arg2:T12	
+T13	OtherPolitical 239 247	anything
+T14	Actor 317 326	everybody
+R5	Interact Arg1:T4 Arg2:T6	

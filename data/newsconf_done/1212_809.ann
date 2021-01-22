@@ -1,0 +1,55 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 24	you
+T3	OtherPolitical 40 54	this statement
+R1	Act Arg1:T2 Arg2:T3	
+T4	Actor 61 62	I
+T5	OtherPolitical 90 101	negotiation
+R2	Oppose Arg1:T4 Arg2:T5	
+T6	Actor 113 114	I
+T7	OtherPolitical 144 155	negotiation
+R3	Support Arg1:T6 Arg2:T7	
+T8	Actor 177 178	I
+T9	Actor 189 191	we
+R4	Interact Arg1:T8 Arg2:T9	
+T10	Actor 489 491	we
+T11	Implementation 502 543	to negotiate with respect to German peace
+R5	Support Arg1:T10 Arg2:T11	
+T12	Actor 737 740	you
+T13	Actor 843 845	we
+T14	Actor 967 970	you
+T15	Actor 1413 1415	we
+T16	OtherPolitical 812 819	tension
+T17	OtherPolitical 1138 1158	General mobilization
+T18	Actor 241 243	we
+T19	Implementation 266 292	the exercise of the rights
+R6	Support Arg1:T18 Arg2:T19	
+T20	Actor 302 304	we
+T21	Institution 321 327	Berlin
+T22	Implementation 333 362	to carry the responsibilities
+R7	Support Arg1:T18 Arg2:T22	
+T23	Actor 382 384	we
+T24	OtherPolitical 388 418	these international agreements
+T25	OtherPolitical 445 459	a new solution
+T26	Attainment 464 482	the German problem
+R8	Disable Arg1:T25 Arg2:T26	
+T27	OtherPolitical 642 653	negotiation
+T28	Implementation 548 607	everything else has not only been emphasized time and again
+R9	Support Arg1:T10 Arg2:T28	
+T29	OtherPolitical 765 787	a general mobilization
+R10	Act Arg1:T12 Arg2:T29	
+T30	OtherPolitical 873 880	tension
+T31	Attainment 931 957	the first Berlin situation
+R11	Achieve Arg1:T13 Arg2:T30	
+T32	Implementation 981 1011	to keep a general mobilization
+R12	Support Arg1:T14 Arg2:T32	
+T33	OtherPolitical 1042 1053	democracies
+T34	Actor 1099 1102	you
+T35	Attainment 1120 1136	a garrison state
+R13	Enable Arg1:T32 Arg2:T35	
+R14	Achieve Arg1:T34 Arg2:T35	
+T36	Attainment 1300 1333	a basis of readiness all the time
+R15	Enable Arg1:T17 Arg2:T36	
+T38	Attainment 1165 1229	all kinds of diversion of materials and other kinds of resources
+R16	Enable Arg1:T17 Arg2:T38	
+T37	Implementation 1235 1266	the operation of a free economy
+R17	Enable Arg1:T37 Arg2:T38	

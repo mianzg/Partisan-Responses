@@ -1,0 +1,22 @@
+T1	Actor 21 22	I
+T2	Actor 0 13	THE PRESIDENT
+T3	Actor 52 53	I
+T4	Actor 469 472	you
+T5	Implementation 88 133	the administration's flexible support program
+R1	Support Arg1:T3 Arg2:T5	
+T6	Actor 164 167	You
+T7	Actor 207 209	we
+T8	Attainment 177 206	a great trend in this country
+R2	Achieve Arg1:T6 Arg2:T8	
+T9	Actor 266 269	you
+T10	OtherPolitical 281 285	that
+R3	Act Arg1:T9 Arg2:T10	
+T11	Implementation 309 345	all sorts of laws and pieces of laws
+T12	Attainment 371 386	these surpluses
+R4	Disable Arg1:T11 Arg2:T12	
+T13	Attainment 410 452	a better balance between supply and demand
+R5	Enable Arg1:T11 Arg2:T13	
+T14	Implementation 487 536	any law that just suddenly would turn this around
+R6	Oppose Arg1:T4 Arg2:T14	
+T15	Attainment 225 264	billions of dollars' worth of surpluses
+R7	Achieve Arg1:T7 Arg2:T15	

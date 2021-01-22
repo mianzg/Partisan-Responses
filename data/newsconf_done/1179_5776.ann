@@ -1,0 +1,27 @@
+T1	Implementation 46 65	the nuclear testing
+T2	Actor 104 108	they
+T3	Institution 192 198	Canada
+T4	Institution 200 205	Italy
+T5	Institution 207 214	Britain
+T6	Actor 216 225	ourselves
+T7	Institution 231 237	France
+T8	Actor 455 467	the Russians
+T9	Actor 515 517	we
+T10	Actor 559 561	we
+T11	Actor 591 592	I
+T12	Actor 479 483	they
+T13	Actor 0 13	THE PRESIDENT
+T14	Implementation 116 160	to walk out on these particular negotiations
+R1	Support Arg1:T2 Arg2:T14	
+T16	Institution 260 284	the 10-nation conference
+T17	OtherPolitical 346 364	a fine opportunity
+T18	Implementation 365 413	to refine and agree upon the details of the plan
+T15	Actor 166 190	five nations on our side
+R2	Support Arg1:T15 Arg2:T18	
+R3	Support Arg1:T3 Arg2:T18	
+R4	Support Arg1:T4 Arg2:T18	
+R5	Support Arg1:T5 Arg2:T18	
+R6	Support Arg1:T6 Arg2:T18	
+R7	Support Arg1:T7 Arg2:T18	
+R8	Achieve Arg1:T16 Arg2:T17	
+T19	OtherPolitical 616 631	some refinement

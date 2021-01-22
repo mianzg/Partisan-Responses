@@ -1,0 +1,22 @@
+T1	Actor 25 27	We
+T2	Institution 37 68	the National Science Foundation
+T3	Actor 84 96	Dr. Waterman
+T4	Actor 101 110	Dr. Bronk
+T5	Actor 134 147	THE PRESIDENT
+T6	Implementation 152 172	instant consultation
+R1	Support Arg1:T1 Arg2:T2	
+R2	Support Arg1:T3 Arg2:T6	
+R3	Support Arg1:T4 Arg2:T6	
+T7	Actor 191 193	We
+T8	Actor 199 263	We scientists in the AEC and Defense Department and other places
+R4	Support Arg1:T7 Arg2:T8	
+T9	Actor 286 299	THE PRESIDENT
+T10	Actor 345 348	you
+T11	Actor 367 368	I
+T12	OtherPolitical 386 388	It
+R5	Act Arg1:T11 Arg2:T12	
+T13	OtherPolitical 364 366	It
+R6	Act Arg1:T10 Arg2:T13	
+T14	Implementation 300 330	to have one right in my office
+R7	Act Arg1:T9 Arg2:T14	
+T15	Actor 0 13	THE PRESIDENT

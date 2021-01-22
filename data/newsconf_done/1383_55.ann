@@ -1,0 +1,4 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 19 20	I
+T3	Implementation 27 71	comment on the situation at the present time
+R1	Oppose Arg1:T2 Arg2:T3	

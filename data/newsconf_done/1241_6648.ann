@@ -1,0 +1,23 @@
+T2	Actor 15 16	I
+T1	Actor 0 13	THE PRESIDENT
+T3	Implementation 30 74	to give you an estimate of the Russian claim
+R1	Oppose Arg1:T2 Arg2:T3	
+T4	Actor 76 77	I
+T5	Actor 98 101	our
+T6	Implementation 118 133	to witness this
+R2	Act Arg1:T5 Arg2:T6	
+T7	Actor 135 136	I
+T8	Actor 148 152	they
+R3	Interact Arg1:T7 Arg2:T8	
+T9	Actor 206 207	I
+T10	OtherPolitical 234 247	they accuracy
+R4	Act Arg1:T9 Arg2:T10	
+T11	Actor 259 262	you
+T12	OtherPolitical 268 294	something of they accuracy
+R5	Act Arg1:T11 Arg2:T12	
+T13	Actor 296 299	you
+T14	OtherPolitical 326 352	they usefulness in warfare
+R6	Act Arg1:T13 Arg2:T14	
+T15	Implementation 158 200	fired objects a very considerable distance
+R7	Support Arg1:T8 Arg2:T15	
+R8	Interact Arg1:T4 Arg2:T5	

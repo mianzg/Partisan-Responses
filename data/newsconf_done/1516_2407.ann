@@ -1,0 +1,39 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 44 45	I
+T3	Actor 58 68	The people
+T4	Actor 102 103	I
+T5	Actor 113 123	The people
+T6	Actor 144 154	The people
+T7	Attainment 169 192	that kind of government
+R1	Achieve Arg1:T6 Arg2:T7	
+T8	OtherPolitical 54 56	it
+R2	Act Arg1:T2 Arg2:T8	
+R3	Interact Arg1:T4 Arg2:T5	
+T9	Actor 128 138	The people
+T10	Actor 203 216	Mr. President
+T11	Actor 248 291	the Chairman of the Atomic Energy Committee
+T12	Actor 728 729	I
+T13	Implementation 749 764	disclosing that
+R4	Oppose Arg1:T12 Arg2:T13	
+T14	OtherPolitical 789 806	public discussion
+T15	Actor 314 327	Mr. President
+T16	Actor 418 421	you
+T17	OtherPolitical 445 449	that
+R5	Act Arg1:T16 Arg2:T17	
+T18	Actor 454 467	THE PRESIDENT
+T19	OtherPolitical 218 230	a suggestion
+R6	Act Arg1:T11 Arg2:T19	
+T20	Actor 293 294	I
+T21	Actor 469 512	the Chairman of the Atomic Energy Committee
+T22	Institution 343 355	this country
+T23	Institution 361 370	the world
+T24	Attainment 380 410	atomic bombs the world now has
+R7	Achieve Arg1:T23 Arg2:T24	
+T25	Actor 579 622	the Chairman of the Atomic Energy Committee
+T26	Actor 628 630	me
+R8	Interact Arg1:T25 Arg2:T26	
+T27	Actor 646 689	the Chairman of the Atomic Energy Committee
+T28	OtherPolitical 698 712	such statement
+R9	Oppose Arg1:T27 Arg2:T28	
+T29	OtherPolitical 549 563	such statement
+R10	Oppose Arg1:T21 Arg2:T29	

@@ -1,0 +1,23 @@
+T1	Actor 21 22	I
+T2	Actor 331 332	I
+T3	Actor 347 350	you
+T4	Actor 435 436	I
+T5	Actor 449 452	you
+T6	Actor 0 13	THE PRESIDENT
+T7	Actor 74 75	I
+T8	Implementation 30 52	make any limits at all
+R1	Oppose Arg1:T1 Arg2:T8	
+T9	Actor 155 157	us
+T10	Attainment 109 127	what us want to be
+T11	Attainment 163 207	to be with relation to the rest of the world
+R2	Achieve Arg1:T9 Arg2:T11	
+R3	Interact Arg1:T2 Arg2:T3	
+T12	Attainment 360 380	a prosperous economy
+T13	Implementation 389 429	a proper relationship to other countries
+R4	Enable Arg1:T13 Arg2:T12	
+R5	Interact Arg1:T4 Arg2:T5	
+T14	OtherPolitical 589 606	reciprocal action
+T15	Implementation 662 673	my proposal
+T16	Implementation 550 573	having a strong economy
+T17	Attainment 462 500	strong relationships with your friends
+R6	Enable Arg1:T16 Arg2:T17	

@@ -1,0 +1,56 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Implementation 21 30	a tax cut
+T3	OtherPolitical 46 59	a possibility
+T4	Actor 1305 1306	I
+T5	Actor 145 147	us
+T6	Actor 237 239	us
+T7	Actor 309 312	You
+T8	Actor 522 525	you
+T9	Actor 750 751	I
+T10	Actor 1014 1015	I
+T11	Actor 655 658	you
+T12	Attainment 76 103	deepening of the depression
+T13	OtherPolitical 118 120	it
+R1	Disable Arg1:T13 Arg2:T12	
+R2	Disable Arg1:T2 Arg2:T12	
+T14	Actor 164 166	us
+R3	Interact Arg1:T5 Arg2:T14	
+T15	Implementation 182 235	enlarged sums in every single thing that us are doing
+R4	Support Arg1:T14 Arg2:T15	
+T16	Implementation 255 307	the greatest sums in us history for all public works
+R5	Support Arg1:T6 Arg2:T16	
+T17	Implementation 469 501	Our peacetime budget for defense
+T18	Institution 331 356	the Bureau of Reclamation
+T19	Institution 358 380	the Corps of Engineers
+T20	Institution 382 407	the Bureau of Reclamation
+T21	Institution 409 431	the Corps of Engineers
+T22	Attainment 544 565	this kind of expenses
+R6	Achieve Arg1:T8 Arg2:T22	
+T23	Implementation 588 618	o get some money in your purse
+T24	Attainment 619 639	to pay for the bills
+T25	Actor 567 570	you
+R7	Support Arg1:T25 Arg2:T23	
+R8	Enable Arg1:T23 Arg2:T24	
+T26	Implementation 681 690	a tax cut
+R9	Oppose Arg1:T11 Arg2:T26	
+T27	OtherPolitical 697 701	that
+T28	Attainment 715 740	to bring about the upturn
+R10	Enable Arg1:T27 Arg2:T28	
+T29	Attainment 821 843	more job opportunities
+R11	Achieve Arg1:T9 Arg2:T29	
+T30	Attainment 854 886	some increased job opportunities
+R12	Achieve Arg1:T9 Arg2:T30	
+T31	Actor 938 940	we
+T32	OtherPolitical 925 929	that
+T33	OtherPolitical 949 953	that
+T34	Attainment 987 1012	the end of this recession
+R13	Enable Arg1:T33 Arg2:T34	
+T35	Attainment 1086 1102	a critical state
+T36	OtherPolitical 1060 1064	that
+R14	Oppose Arg1:T10 Arg2:T36	
+T37	Attainment 1126 1138	quick upturn
+T38	Attainment 1147 1178	a gradual upturn in the economy
+T39	Actor 1239 1242	you
+T40	Attainment 1265 1300	certain phases as beginning to wane
+R15	Achieve Arg1:T39 Arg2:T40	
+T41	OtherPolitical 1211 1225	this recession

@@ -1,0 +1,9 @@
+T1	Actor 158 159	I
+T2	Actor 0 13	THE PRESIDENT
+T3	Actor 29 42	Mr. President
+T4	Actor 47 50	you
+T5	Actor 138 151	Mr. President
+T6	Actor 93 107	Governor Dewey
+T7	Institution 121 133	the Far East
+T8	Actor 73 87	Governor Dewey
+R1	Support Arg1:T4 Arg2:T8	

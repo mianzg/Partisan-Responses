@@ -1,0 +1,15 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 26 27	I
+T3	Actor 42 45	you
+T4	Actor 55 56	I
+T5	Implementation 66 89	to leave tomorrow night
+T6	Actor 138 139	I
+T7	Implementation 158 180	caught up with my work
+R1	Support Arg1:T6 Arg2:T7	
+T8	Implementation 185 212	arranged for communications
+R2	Support Arg1:T6 Arg2:T8	
+T9	Actor 218 219	I
+T10	Implementation 224 262	go if nothing unusual, untoward occurs
+R3	Support Arg1:T9 Arg2:T10	
+R4	Interact Arg1:T2 Arg2:T3	
+R5	Support Arg1:T4 Arg2:T5	

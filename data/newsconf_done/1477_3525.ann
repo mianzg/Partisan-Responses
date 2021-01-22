@@ -1,0 +1,12 @@
+T1	Institution 15 34	St. Lawrence Seaway
+T2	Actor 0 13	THE PRESIDENT
+T4	Actor 161 163	we
+T5	Institution 180 211	the docks in Chicago and Duluth
+T6	Actor 135 137	we
+T3	Actor 36 37	I
+T8	Implementation 43 97	St. Lawrence Seaway development all the way to Chicago
+R1	Support Arg1:T3 Arg2:T8	
+T9	Actor 107 109	we
+T7	Implementation 142 159	tie up in Chicago
+R2	Support Arg1:T6 Arg2:T7	
+R3	Support Arg1:T9 Arg2:T7	

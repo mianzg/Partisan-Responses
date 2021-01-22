@@ -1,0 +1,45 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 22	I
+T3	Institution 369 381	the Congress
+T4	Actor 110 113	you
+T5	OtherPolitical 124 133	something
+T6	Implementation 75 99	this action of yesterday
+R1	Act Arg1:T4 Arg2:T6	
+R2	Act Arg1:T2 Arg2:T6	
+T7	Actor 183 184	I
+T8	Actor 200 201	I
+T9	Implementation 234 258	the separation of powers
+R3	Support Arg1:T8 Arg2:T9	
+R4	Interact Arg1:T7 Arg2:T8	
+T10	Actor 292 295	you
+T11	Institution 421 445	the executive department
+R5	Support Arg1:T3 Arg2:T11	
+T12	Institution 451 464	the executive
+T13	OtherPolitical 506 531	the legislative authority
+R6	Achieve Arg1:T12 Arg2:T13	
+T14	Actor 548 552	they
+T15	OtherPolitical 558 583	the legislative authority
+R7	Achieve Arg1:T14 Arg2:T15	
+T16	Institution 647 671	all of these departments
+T17	Actor 677 678	I
+T20	Attainment 805 828	the courts independence
+T21	Actor 843 845	we
+T22	Implementation 877 910	to get a lot of additional judges
+R8	Support Arg1:T21 Arg2:T22	
+T23	Actor 918 920	we
+T24	Actor 962 964	we
+T25	OtherPolitical 977 981	this
+T26	Actor 1078 1079	I
+T27	Actor 1140 1156	very fine lawyer
+T28	Actor 1166 1167	I
+T29	Attainment 1178 1206	the justification of any law
+R9	Achieve Arg1:T28 Arg2:T29	
+R10	Support Arg1:T24 Arg2:T25	
+T30	Implementation 1106 1131	to take a lot of studying
+R11	Support Arg1:T27 Arg2:T30	
+T31	OtherPolitical 715 719	that
+R12	Oppose Arg1:T17 Arg2:T31	
+T18	Implementation 720 778	any law that the Congress tried to put in about the courts
+R13	Disable Arg1:T18 Arg2:T20	
+T19	Attainment 988 1076	law interfering with the constitutional rights and powers and authority of the judiciary
+R14	Enable Arg1:T25 Arg2:T19	

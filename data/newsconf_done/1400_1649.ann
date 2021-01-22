@@ -1,0 +1,41 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 38 51	Mr. President
+T3	Actor 263 276	Mr. President
+T4	Institution 229 258	top bureaus in the Government
+T5	Institution 214 225	the Cabinet
+T6	Actor 423 424	I
+T7	Actor 57 59	we
+T8	Implementation 89 116	resignations in the Cabinet
+R1	Act Arg1:T7 Arg2:T8	
+T9	Implementation 156 206	any resignations to be asked for, or to be accepte
+T10	Actor 315 316	I
+T11	Actor 331 334	you
+R2	Interact Arg1:T10 Arg2:T11	
+T12	OtherPolitical 448 459	the subject
+R3	Act Arg1:T6 Arg2:T12	
+T13	Actor 493 494	I
+T14	Actor 720 723	you
+T15	Actor 356 359	you
+T16	Implementation 364 421	get it in the next day's paper, or that afternoon's paper
+R4	Support Arg1:T15 Arg2:T16	
+R5	Interact Arg1:T11 Arg2:T15	
+T17	Actor 467 476	Mr. Short
+T18	Actor 544 553	Mr. Short
+T19	Actor 478 491	Mr. President
+T20	Actor 555 568	Mr. President
+T21	Actor 501 504	you
+T22	Actor 519 528	Mr. Riggs
+R6	Interact Arg1:T13 Arg2:T21	
+R7	Interact Arg1:T21 Arg2:T22	
+T23	Actor 597 600	you
+T24	Actor 620 633	THE PRESIDENT
+T25	Actor 635 644	Mr. Short
+T26	Actor 646 659	Mr. President
+T27	Actor 665 666	I
+R8	Interact Arg1:T26 Arg2:T27	
+T28	Implementation 728 757	leave it at later in the week
+R9	Support Arg1:T14 Arg2:T28	
+T29	Actor 697 698	I
+T30	Actor 772 781	Robert L.
+T31	Institution 791 821	the Louisville Courier-Journal
+T32	Actor 782 787	Riggs

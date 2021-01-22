@@ -1,0 +1,16 @@
+T1	Actor 215 233	Governor Stevenson
+T2	Actor 0 13	THE PRESIDENT
+T3	Actor 63 81	Governor Stevenson
+T4	Actor 86 89	you
+R1	Interact Arg1:T3 Arg2:T4	
+T5	Actor 195 213	Governor Stevenson
+T6	Institution 150 172	The national committee
+T7	Actor 259 260	I
+T8	Actor 272 275	you
+R2	Interact Arg1:T7 Arg2:T8	
+T9	OtherPolitical 255 257	it
+R3	Support Arg1:T1 Arg2:T9	
+R4	Support Arg1:T5 Arg2:T6	
+T10	Actor 130 143	Mr. President
+T11	Implementation 103 124	long whistlestop tour
+R5	Act Arg1:T4 Arg2:T11	

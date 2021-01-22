@@ -1,0 +1,19 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	OtherPolitical 365 388	a very informal meeting
+T3	Actor 110 111	I
+T4	OtherPolitical 54 92	one of a more informal type of meeting
+R1	Achieve Arg1:T3 Arg2:T4	
+T5	Implementation 131 146	to have more of
+R2	Support Arg1:T3 Arg2:T5	
+T6	Actor 165 166	I
+T7	Actor 171 194	the leaders of Congress
+T8	Actor 200 218	Edward T. Folliard
+R3	Interact Arg1:T6 Arg2:T7	
+R4	Interact Arg1:T6 Arg2:T8	
+T9	Institution 220 235	Washington Post
+T10	Actor 237 250	Mr. President
+T11	OtherPolitical 268 289	the general situation
+R5	Act Arg1:T10 Arg2:T11	
+T12	OtherPolitical 295 327	a great deal of the conversation
+R6	Act Arg1:T10 Arg2:T12	
+T13	Actor 394 395	I

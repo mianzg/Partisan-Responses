@@ -1,0 +1,46 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 31 41	Mr. Wilson
+T3	Actor 57 60	you
+T4	Actor 81 93	Mr. Humphrey
+T5	Institution 146 167	the entire Government
+T6	OtherPolitical 114 125	this budget
+R1	Support Arg1:T5 Arg2:T6	
+R2	Support Arg1:T4 Arg2:T6	
+T7	Actor 229 241	Mr. Humphrey
+T8	OtherPolitical 260 271	this budget
+R3	Support Arg1:T7 Arg2:T8	
+T9	Actor 305 317	Mr. Humphrey
+T10	Implementation 351 382	saving money out of this budget
+R4	Support Arg1:T9 Arg2:T10	
+T11	Actor 342 343	I
+R5	Support Arg1:T11 Arg2:T10	
+T12	OtherPolitical 472 482	the budget
+T13	Actor 494 495	I
+T14	OtherPolitical 502 504	it
+R6	Support Arg1:T13 Arg2:T14	
+T15	Attainment 532 581	a great many raises in expenditures for personnel
+T16	Actor 592 595	you
+T17	Actor 780 782	we
+T18	Implementation 930 959	the new B-52 type of airplane
+T19	Attainment 798 823	this guided missile field
+R7	Achieve Arg1:T17 Arg2:T19	
+T20	Actor 610 613	you
+R8	Interact Arg1:T16 Arg2:T20	
+T21	Implementation 389 405	the $72 billions
+T22	Implementation 619 662	two and a half million in the civil service
+R9	Support Arg1:T20 Arg2:T22	
+T23	Implementation 668 706	three million in the military services
+R10	Support Arg1:T20 Arg2:T23	
+T24	OtherPolitical 752 763	your budget
+T25	OtherPolitical 964 987	everything of that kind
+T27	Actor 1178 1181	you
+T28	Actor 1230 1233	you
+T29	Actor 1269 1272	you
+T30	Actor 1310 1313	you
+T26	Attainment 992 1018	gone up so much in expense
+R11	Enable Arg1:T18 Arg2:T26	
+R12	Enable Arg1:T25 Arg2:T26	
+T31	Implementation 1073 1097	improving the efficiency
+T32	Implementation 1032 1057	getting any more strength
+T33	Attainment 1243 1263	more than the amount
+R13	Achieve Arg1:T28 Arg2:T33	

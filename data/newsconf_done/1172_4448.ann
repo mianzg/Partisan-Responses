@@ -1,0 +1,84 @@
+T1	Actor 48 49	I
+T2	Actor 62 63	I
+T3	Actor 2019 2021	we
+T4	Actor 1797 1799	We
+T5	Actor 154 156	we
+T6	Actor 170 171	I
+T7	Actor 1642 1643	I
+T8	Actor 1883 1885	We
+T9	Institution 1340 1362	the Federal Government
+T10	Institution 1422 1440	Federal Government
+T11	Actor 906 912	people
+T12	Institution 1108 1130	the Federal Government
+T13	Institution 1164 1186	the Federal Government
+T14	Actor 0 13	THE PRESIDENT
+T15	Actor 73 83	seven sons
+T16	Actor 85 86	I
+T17	Actor 93 108	the seventh son
+R1	Oppose Arg1:T16 Arg2:T17	
+T18	Actor 138 147	a prophet
+T19	Actor 130 131	I
+R2	Oppose Arg1:T19 Arg2:T18	
+T20	Actor 112 125	a seventh son
+T21	Actor 211 212	I
+T22	Implementation 229 250	the economic analyses
+R3	Act Arg1:T21 Arg2:T22	
+T23	OtherPolitical 257 268	the economy
+T24	OtherPolitical 285 296	the economy
+T25	Attainment 346 369	to provide more revenue
+R4	Enable Arg1:T24 Arg2:T25	
+T26	Attainment 414 429	Federal revenue
+R5	Enable Arg1:T24 Arg2:T26	
+T27	Implementation 453 470	going into public
+T28	Attainment 526 537	a recession
+R6	Disable Arg1:T27 Arg2:T28	
+T29	Attainment 542 561	to stop a recession
+R7	Enable Arg1:T27 Arg2:T29	
+T30	Actor 563 564	I
+T31	Implementation 574 602	a very, very searching study
+R8	Support Arg1:T30 Arg2:T31	
+T32	Actor 655 656	I
+T33	Implementation 666 683	to use this thing
+R9	Support Arg1:T32 Arg2:T33	
+T34	Attainment 702 742	to point out that that kind of a problem
+R10	Enable Arg1:T33 Arg2:T34	
+T35	Attainment 747 770	that kind of dependence
+R11	Enable Arg1:T33 Arg2:T35	
+T36	Actor 874 877	you
+T37	OtherPolitical 890 901	boom period
+T38	OtherPolitical 844 857	the recession
+T39	OtherPolitical 785 796	a recession
+T40	Actor 988 991	you
+T41	Actor 1036 1037	I
+T42	Actor 1049 1051	we
+R12	Interact Arg1:T41 Arg2:T42	
+T43	OtherPolitical 2007 2013	a debt
+T44	Implementation 2027 2042	to pay sometime
+R13	Support Arg1:T3 Arg2:T44	
+R14	Achieve Arg1:T3 Arg2:T43	
+T45	Actor 1279 1307	people in the several States
+T46	Implementation 1220 1251	unemployment insurance benefits
+R15	Support Arg1:T13 Arg2:T46	
+T47	Actor 1363 1364	I
+T48	Actor 1385 1386	I
+T49	OtherPolitical 1402 1413	the figures
+R16	Act Arg1:T48 Arg2:T49	
+T50	OtherPolitical 1515 1526	the figures
+T51	Attainment 1538 1561	suffering at the moment
+R17	Disable Arg1:T50 Arg2:T51	
+T52	Attainment 1566 1590	restored some confidence
+R18	Enable Arg1:T50 Arg2:T52	
+T53	Actor 1595 1601	people
+T54	Implementation 1618 1640	to build and buy again
+R19	Support Arg1:T53 Arg2:T54	
+T55	Implementation 1445 1463	600 or 700 million
+R20	Support Arg1:T9 Arg2:T55	
+T56	Implementation 1705 1737	expanding $3 or $4 or $5 billion
+R21	Oppose Arg1:T7 Arg2:T56	
+T57	Actor 1769 1772	you
+T58	Attainment 1777 1795	a tremendous boost
+R22	Achieve Arg1:T57 Arg2:T58	
+T59	Implementation 1815 1839	$503 or $504 billion GNP
+R23	Act Arg1:T4 Arg2:T59	
+T60	Implementation 1853 1873	3 or 4 or 5 billions
+R24	Act Arg1:T8 Arg2:T60	

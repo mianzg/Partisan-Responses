@@ -1,0 +1,39 @@
+T1	Institution 38 56	the United Nations
+T2	Actor 99 100	I
+T3	Institution 107 125	the United Nations
+T4	Institution 211 229	the United Nations
+T5	Institution 870 887	the United States
+T6	Institution 954 971	the United States
+T7	Institution 519 536	the United States
+T8	Actor 268 269	I
+T9	Actor 453 454	I
+T10	Actor 477 478	I
+T11	Actor 623 624	I
+T12	Actor 350 352	we
+T13	Actor 415 417	we
+T14	Actor 0 13	THE PRESIDENT
+T15	Attainment 187 199	difficulties
+R1	Achieve Arg1:T4 Arg2:T15	
+T16	Implementation 275 341	to get over the cooperation between the primary user and the giver
+R2	Support Arg1:T8 Arg2:T16	
+T17	Attainment 363 389	an expanding world economy
+R3	Enable Arg1:T16 Arg2:T17	
+R4	Achieve Arg1:T12 Arg2:T17	
+T18	Actor 430 451	some particular group
+R5	Support Arg1:T13 Arg2:T18	
+R6	Interact Arg1:T9 Arg2:T10	
+T19	Actor 489 492	you
+R7	Interact Arg1:T10 Arg2:T19	
+T20	Actor 638 654	the whipping boy
+T21	Implementation 680 705	to have another dam built
+R8	Support Arg1:T20 Arg2:T21	
+T22	Actor 842 861	a good whipping boy
+T23	Attainment 573 590	our own interests
+T24	OtherPolitical 606 621	mutual security
+T25	OtherPolitical 506 513	program
+R9	Act Arg1:T7 Arg2:T25	
+T26	OtherPolitical 751 771	the political appeal
+T27	Attainment 918 936	our best interests
+R10	Achieve Arg1:T5 Arg2:T27	
+T28	OtherPolitical 941 948	program
+R11	Act Arg1:T6 Arg2:T28	

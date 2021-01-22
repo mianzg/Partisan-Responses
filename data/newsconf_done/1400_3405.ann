@@ -1,0 +1,5 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 17	he
+T3	Implementation 28 54	to resign long before that
+R1	Act Arg1:T2 Arg2:T3	
+T4	Implementation 78 99	to get he resignation

@@ -1,0 +1,46 @@
+T1	Actor 15 17	We
+T2	Implementation 38 89	legislative controls on the processes in We economy
+R1	Oppose Arg1:T1 Arg2:T2	
+T3	Actor 91 93	We
+T4	Actor 1232 1234	we
+T5	Implementation 1249 1268	spending recklessly
+T6	Implementation 1273 1298	adding fuel to this flame
+R2	Oppose Arg1:T4 Arg2:T5	
+R3	Oppose Arg1:T4 Arg2:T6	
+T7	Actor 1014 1015	I
+T8	Implementation 1034 1052	any buyers' strike
+R4	Oppose Arg1:T7 Arg2:T8	
+T9	Actor 1058 1059	I
+T10	Actor 1074 1076	we
+T11	Implementation 1084 1113	buy selectively and carefully
+R5	Interact Arg1:T9 Arg2:T10	
+R6	Support Arg1:T10 Arg2:T11	
+T12	OtherPolitical 118 122	that
+T13	Implementation 203 239	a method of controlling our economy,
+T14	Actor 240 243	you
+T15	Attainment 257 297	an entirely different form of government
+R7	Achieve Arg1:T14 Arg2:T15	
+T16	Actor 384 386	We
+T17	Institution 426 440	the Government
+T18	Implementation 458 514	to marshal all of the Government influence and authority
+R8	Oppose Arg1:T17 Arg2:T18	
+T19	Attainment 523 546	unnecessary price rises
+R9	Enable Arg1:T18 Arg2:T19	
+T20	Implementation 603 678	constant meetings with different people of influence in the private economy
+T21	Implementation 684 758	the actions of the Treasury, the Federal Reserve Board, and other agencies
+T22	Attainment 827 855	to keep down this price rise
+R10	Enable Arg1:T20 Arg2:T22	
+R11	Enable Arg1:T21 Arg2:T22	
+T23	Actor 857 858	I
+T24	Attainment 917 942	this problem of inflation
+T25	Attainment 952 978	our major internal problem
+T26	Actor 984 986	we
+T27	OtherPolitical 1002 1012	do we part
+R12	Support Arg1:T26 Arg2:T27	
+T28	Actor 1138 1140	we
+T29	Attainment 1146 1175	the largest income in history
+R13	Achieve Arg1:T28 Arg2:T29	
+T30	Attainment 1177 1203	largest individual incomes
+T31	Attainment 1205 1230	largest corporate incomes
+R14	Achieve Arg1:T28 Arg2:T30	
+R15	Achieve Arg1:T28 Arg2:T31	

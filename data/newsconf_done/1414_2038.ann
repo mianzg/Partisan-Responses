@@ -1,0 +1,8 @@
+T1	Actor 54 55	I
+T2	OtherPolitical 63 79	my last question
+R1	Achieve Arg1:T1 Arg2:T2	
+T3	Actor 89 102	THE PRESIDENT
+T4	Actor 15 16	I
+T5	OtherPolitical 36 40	that
+T6	Actor 0 13	THE PRESIDENT
+R2	Act Arg1:T4 Arg2:T5	

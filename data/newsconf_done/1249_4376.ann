@@ -1,0 +1,32 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 22	I
+T3	Actor 479 480	I
+T4	Actor 41 44	you
+R1	Interact Arg1:T2 Arg2:T4	
+T5	Actor 50 66	Martin S. Hayden
+T6	Actor 152 155	you
+T7	Actor 485 487	we
+T8	Actor 171 172	I
+T9	Actor 186 192	people
+T10	Implementation 95 112	all your formulae
+R2	Interact Arg1:T4 Arg2:T5	
+R3	Act Arg1:T4 Arg2:T10	
+T11	Implementation 209 271	the proposition that Dr. Lawrence and Dr. Teller brought to me
+R4	Oppose Arg1:T9 Arg2:T11	
+R5	Interact Arg1:T8 Arg2:T9	
+T12	Actor 289 292	you
+T13	Implementation 299 326	make completely clean bombs
+R6	Support Arg1:T12 Arg2:T13	
+T14	Actor 346 349	you
+T15	Actor 381 384	you
+T16	Actor 449 452	you
+T17	Implementation 502 525	to ask any nation there
+R7	Support Arg1:T7 Arg2:T17	
+T18	Implementation 526 579	to put any nation there proper instruments in the air
+R8	Support Arg1:T7 Arg2:T18	
+T19	Implementation 580 640	to detect whether or not any nation there contention is true
+R9	Support Arg1:T7 Arg2:T19	
+T20	OtherPolitical 408 421	radioactivity
+T21	OtherPolitical 423 442	radioactive fallout
+R10	Achieve Arg1:T15 Arg2:T20	
+R11	Achieve Arg1:T15 Arg2:T21	

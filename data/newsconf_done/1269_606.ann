@@ -1,0 +1,55 @@
+T1	Actor 1225 1235	Mr. Nasser
+T2	Actor 0 13	THE PRESIDENT
+T3	Institution 53 65	this country
+T4	Implementation 88 131	a peaceful solution of the Suez controversy
+R1	Support Arg1:T3 Arg2:T4	
+T5	Actor 164 180	Secretary Dulles
+T6	Implementation 181 203	the 18-nation proposal
+T7	Actor 230 246	President Nasser
+T8	Implementation 261 283	the 18-nation proposal
+R2	Oppose Arg1:T7 Arg2:T8	
+R3	Act Arg1:T7 Arg2:T6	
+T9	Actor 304 320	Secretary Dulles
+R4	Oppose Arg1:T7 Arg2:T9	
+T10	Attainment 321 341	great disappointment
+R5	Achieve Arg1:T9 Arg2:T10	
+T11	Implementation 360 382	the 18-nation proposal
+T12	Actor 388 389	I
+T13	Institution 402 457	all of the whole world that is interested in this thing
+R6	Achieve Arg1:T13 Arg2:T10	
+T14	Institution 729 750	the Committee of Five
+T15	Actor 777 779	We
+T16	OtherPolitical 789 795	a debt
+T17	Actor 839 841	He
+T18	Actor 894 896	We
+T19	Actor 985 986	I
+T20	Actor 1008 1018	Mr. Nasser
+T21	Implementation 1102 1122	to base a conference
+T22	Actor 1184 1185	I
+T23	Actor 1308 1310	we
+T24	OtherPolitical 467 476	that plan
+T25	Attainment 491 518	the ideas of the 18 nations
+R7	Enable Arg1:T24 Arg2:T25	
+T26	Institution 546 551	Egypt
+T27	Implementation 623 660	the Constantinople convention of 1888
+T28	Actor 677 692	the individuals
+R8	Support Arg1:T28 Arg2:T27	
+T29	Attainment 755 775	an extraordinary job
+R9	Achieve Arg1:T14 Arg2:T29	
+R10	Achieve Arg1:T15 Arg2:T16	
+T30	Actor 784 788	them
+R11	Interact Arg1:T15 Arg2:T30	
+T31	Actor 815 837	Prime Minister Menzies
+R12	Interact Arg1:T15 Arg2:T31	
+T32	Actor 937 947	Mr. Nasser
+T33	OtherPolitical 958 969	a proposal.
+R13	Support Arg1:T32 Arg2:T33	
+T34	OtherPolitical 1024 1031	nothing
+R14	Act Arg1:T20 Arg2:T34	
+R15	Interact Arg1:T19 Arg2:T20	
+T35	OtherPolitical 1209 1224	any suggestions
+R16	Support Arg1:T1 Arg2:T35	
+T36	Institution 1271 1286	this government
+T37	Implementation 1341 1393	diplomatic consultation with a number of governments
+R17	Support Arg1:T23 Arg2:T37	
+T38	OtherPolitical 1412 1433	the next move to make

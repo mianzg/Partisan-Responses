@@ -1,0 +1,53 @@
+T1	Actor 1030 1053	Senator Barry Goldwater
+T2	Actor 20 21	I
+T3	Actor 26 27	I
+T4	Actor 110 112	we
+T5	Actor 102 103	I
+T6	Actor 932 941	President
+T7	Actor 881 882	I
+T8	Actor 852 853	I
+T9	Actor 860 869	President
+T10	Actor 908 917	President
+T11	Actor 746 747	I
+T12	Actor 604 617	Mr. President
+T13	Actor 453 454	I
+T14	Actor 461 463	we
+T16	Actor 531 533	we
+T17	Actor 561 563	we
+T18	Actor 353 354	I
+T19	Actor 361 371	Mr. Martin
+T21	Actor 133 135	we
+T22	Actor 209 211	we
+T23	Actor 278 279	I
+T24	Actor 1097 1120	Senator Barry Goldwater
+T25	Actor 1135 1158	Senator Barry Goldwater
+T26	Actor 1176 1199	Senator Barry Goldwater
+T27	Actor 657 660	you
+T28	Actor 668 691	Senator Barry Goldwater
+T29	Actor 698 720	the Republican nominee
+T30	Actor 0 13	THE PRESIDENT
+T31	OtherPolitical 45 62	the conversations
+T32	OtherPolitical 64 75	the minutes
+R1	Act Arg1:T3 Arg2:T31	
+R2	Act Arg1:T3 Arg2:T32	
+R3	Interact Arg1:T5 Arg2:T4	
+T33	Implementation 142 189	to send the United States Marines into Honduras
+R4	Support Arg1:T21 Arg2:T33	
+T34	Attainment 289 311	a very serious mistake
+R5	Enable Arg1:T33 Arg2:T34	
+T35	Implementation 387 402	to explain that
+R6	Support Arg1:T19 Arg2:T35	
+T36	Attainment 415 448	the way for democracy to flourish
+R7	Disable Arg1:T35 Arg2:T36	
+R8	Interact Arg1:T18 Arg2:T19	
+R9	Interact Arg1:T13 Arg2:T14	
+T37	Implementation 468 485	the best we could
+R10	Support Arg1:T14 Arg2:T37	
+T15	Implementation 538 555	the best we could
+R11	Support Arg1:T16 Arg2:T15	
+T20	Implementation 574 594	to continue to do so
+R12	Support Arg1:T17 Arg2:T20	
+R13	Support Arg1:T27 Arg2:T28	
+T38	Institution 769 783	Salt Lake City
+T39	Actor 841 850	President
+T40	Actor 1022 1023	I

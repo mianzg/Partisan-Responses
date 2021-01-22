@@ -1,0 +1,7 @@
+T1	Actor 0 15	President Obama
+T2	Actor 17 22	We're
+T3	Implementation 29 50	to do that evaluation
+R1	Support Arg1:T2 Arg2:T3	
+T4	Actor 52 57	We're
+T5	Implementation 64 119	to partly wait for an actual Israeli Government to form
+R2	Support Arg1:T4 Arg2:T5	

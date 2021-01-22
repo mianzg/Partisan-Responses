@@ -1,0 +1,17 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 55 57	me
+T3	OtherPolitical 18 33	detailed report
+T4	OtherPolitical 66 81	detailed report
+T5	Institution 111 139	The Civil Service Commission
+T6	Actor 191 234	one hundred and eighty some thousand people
+T7	Actor 338 339	I
+T8	Actor 349 352	you
+T9	Implementation 446 481	knowing of these derogatory remarks
+T10	Actor 520 522	us
+T11	Implementation 526 550	these derogatory remarks
+T12	Actor 589 645	2200 people against whom the Government intended to move
+T13	Actor 654 710	2200 people against whom the Government intended to move
+T14	Actor 720 776	2200 people against whom the Government intended to move
+R1	Interact Arg1:T13 Arg2:T14	
+T15	OtherPolitical 783 797	security risks
+T16	Actor 818 874	2200 people against whom the Government intended to move

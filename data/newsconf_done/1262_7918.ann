@@ -1,0 +1,30 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 22	I
+T3	Actor 81 101	a military commander
+T4	Actor 106 109	you
+T5	Actor 122 124	me
+R1	Support Arg1:T4 Arg2:T5	
+T6	Implementation 125 164	to put on the uniform again momentarily
+R2	Support Arg1:T5 Arg2:T6	
+T7	Actor 255 258	you
+T8	Actor 603 606	You
+T9	Actor 695 696	I
+T10	Actor 733 734	I
+T11	Actor 769 770	I
+T12	Actor 789 809	a military commander
+T13	OtherPolitical 635 656	preliminary exercises
+R3	Act Arg1:T8 Arg2:T13	
+T14	Attainment 663 693	to get a man that is fit ready
+R4	Enable Arg1:T13 Arg2:T14	
+T15	OtherPolitical 236 254	military exercises
+T16	Attainment 264 281	a man that is fit
+R5	Enable Arg1:T15 Arg2:T16	
+R6	Act Arg1:T7 Arg2:T15	
+T17	Attainment 283 300	a man that is fit
+T18	Attainment 322 339	a man that is fit
+T19	Implementation 349 393	to go on and take the more advanced training
+T20	Attainment 399 416	a man that is fit
+T21	Attainment 453 470	a man that is fit
+T22	Attainment 568 585	a man that is fit
+T23	Implementation 710 731	six months' exercises
+T24	Implementation 838 871	nine months in two separate parts

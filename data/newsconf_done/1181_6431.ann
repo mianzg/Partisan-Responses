@@ -1,0 +1,19 @@
+T1	Actor 257 268	Mr. Hagerty
+T2	Actor 21 22	I
+T3	Actor 41 42	I
+T4	Actor 65 66	I
+T5	Actor 121 132	Mr. Hagerty
+T6	Actor 135 146	Mr. Hagerty
+T7	Actor 92 95	you
+T8	Actor 50 53	you
+R1	Interact Arg1:T3 Arg2:T8	
+T9	Actor 72 76	them
+R2	Interact Arg1:T4 Arg2:T9	
+T10	Implementation 77 87	to do this
+R3	Act Arg1:T4 Arg2:T10	
+T11	Actor 197 210	THE PRESIDENT
+T12	Actor 225 236	Mr. Hagerty
+T13	Actor 278 281	you
+R4	Interact Arg1:T1 Arg2:T13	
+T14	OtherPolitical 282 298	the exact answer
+R5	Act Arg1:T1 Arg2:T14	

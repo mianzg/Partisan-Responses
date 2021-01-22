@@ -1,0 +1,21 @@
+T1	Actor 58 61	you
+T2	Actor 41 42	I
+R1	Interact Arg1:T2 Arg2:T1	
+T3	Actor 76 77	I
+T4	Implementation 88 121	to put before the Congress a plan
+R2	Support Arg1:T3 Arg2:T4	
+T5	Actor 128 129	I
+R3	Act Arg1:T5 Arg2:T4	
+T6	Actor 468 469	I
+T7	OtherPolitical 168 183	the discussions
+T8	OtherPolitical 193 204	conferences
+T9	Implementation 224 251	the formulation of the plan
+T10	Actor 257 258	I
+T11	Attainment 287 310	a good deal of argument
+R4	Enable Arg1:T9 Arg2:T11	
+T12	Actor 389 390	I
+T13	Implementation 338 346	my views
+R5	Support Arg1:T12 Arg2:T13	
+T14	Actor 404 405	I
+T15	OtherPolitical 513 515	it
+R6	Act Arg1:T6 Arg2:T15	

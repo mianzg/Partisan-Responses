@@ -1,0 +1,6 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	OtherPolitical 30 34	this
+T3	Institution 54 86	any other company that I know of
+T4	Institution 95 99	some
+T5	Implementation 117 149	to keep it from being negotiated
+R1	Support Arg1:T4 Arg2:T5	

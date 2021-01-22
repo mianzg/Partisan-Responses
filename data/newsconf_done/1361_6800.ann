@@ -1,0 +1,43 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 405 406	I
+T3	Institution 516 524	the Hill
+T4	Implementation 537 566	to express a certain thought.
+T5	Actor 567 568	I
+T6	Actor 575 581	no one
+R1	Interact Arg1:T5 Arg2:T6	
+T7	Implementation 597 644	the thought that has been put in this amendment
+R2	Oppose Arg1:T6 Arg2:T7	
+T8	Actor 654 658	they
+T9	OtherPolitical 666 680	this amendment
+R3	Support Arg1:T8 Arg2:T9	
+T10	Actor 682 683	I
+T11	Actor 21 22	I
+T12	Actor 29 30	I
+R4	Interact Arg1:T11 Arg2:T12	
+T13	Actor 56 57	I
+R5	Interact Arg1:T12 Arg2:T13	
+T14	OtherPolitical 67 79	a resolution
+T15	Institution 83 91	Congress
+R6	Support Arg1:T13 Arg2:T14	
+T16	Actor 97 98	I
+T17	Attainment 129 167	the convictions of the American people
+R7	Enable Arg1:T14 Arg2:T17	
+T18	Actor 171 190	the American people
+T19	Implementation 199 241	to recognize the enslavement of any people
+R8	Oppose Arg1:T18 Arg2:T19	
+T20	Actor 243 244	I
+T21	Actor 272 273	I
+R9	Interact Arg1:T20 Arg2:T21	
+T22	Actor 287 288	I
+T23	Attainment 293 322	no particular authorial pride
+R10	Interact Arg1:T21 Arg2:T22	
+R11	Achieve Arg1:T22 Arg2:T23	
+T24	Attainment 331 360	no particular authorial pride
+T25	Implementation 381 403	to change some wording
+R12	Support Arg1:T2 Arg2:T25	
+T26	Attainment 482 512	a sort of technical difference
+R13	Act Arg1:T3 Arg2:T4	
+R14	Enable Arg1:T4 Arg2:T26	
+T27	Actor 723 724	I
+T28	Implementation 746 953	to see the general meaning and tone of a resolution to Congress that I thought was representative of the convictions of the American people in their refusal to recognize the enslavement of any people changed
+R15	Oppose Arg1:T27 Arg2:T28	

@@ -1,0 +1,9 @@
+T1	Actor 15 19	they
+T2	Implementation 25 48	get all the information
+T3	Actor 89 93	they
+T4	Implementation 103 135	get any confidential information
+R1	Oppose Arg1:T3 Arg2:T4	
+R2	Support Arg1:T1 Arg2:T2	
+T5	Actor 0 13	THE PRESIDENT
+T6	Institution 78 87	Remington
+T7	Actor 54 58	they

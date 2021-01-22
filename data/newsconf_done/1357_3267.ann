@@ -1,0 +1,4 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Actor 29 54	the congressional leaders
+R1	Support Arg1:T2 Arg2:T3	

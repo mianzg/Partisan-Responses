@@ -1,0 +1,51 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 57 58	I
+T3	Institution 175 194	the city of Norfolk
+T4	Actor 627 628	I
+T5	Actor 200 201	I
+T6	Actor 262 313	the sons and daughters of enlisted men and officers
+T7	Institution 325 333	the Navy
+T8	Actor 487 488	I
+T9	Actor 1479 1480	I
+T10	Actor 1525 1526	I
+T11	Actor 708 719	these folks
+T12	Actor 887 898	these folks
+T13	OtherPolitical 919 928	education
+R1	Achieve Arg1:T12 Arg2:T13	
+T14	Institution 963 982	the city of Norfolk
+T15	Actor 940 959	any other youngster
+T16	Actor 1000 1001	I
+T17	Actor 1029 1040	many people
+T18	Institution 1059 1081	the Federal Government
+T19	Implementation 1153 1193	building about 40,000 public schoolrooms
+R2	Support Arg1:T18 Arg2:T19	
+T20	Implementation 1261 1296	the budget for building schoolrooms
+R3	Support Arg1:T18 Arg2:T20	
+T21	Implementation 1345 1378	conducting educational operations
+R4	Support Arg1:T18 Arg2:T21	
+T22	Institution 1440 1447	Norfolk
+T23	Actor 151 171	students of this age
+T24	Actor 242 260	military personnel
+T25	Actor 399 417	children of people
+T26	OtherPolitical 462 485	the Federal reservation
+R5	Achieve Arg1:T25 Arg2:T26	
+T27	Institution 513 516	HEW
+T28	Institution 521 529	the Navy
+T29	Implementation 556 589	to conduct educational operations
+R6	Support Arg1:T28 Arg2:T29	
+R7	Support Arg1:T27 Arg2:T29	
+T30	Actor 664 679	the other 4,500
+T31	OtherPolitical 740 749	all taxes
+R8	Act Arg1:T11 Arg2:T31	
+T32	OtherPolitical 769 778	the rents
+T33	Actor 779 790	these folks
+R9	Act Arg1:T33 Arg2:T32	
+T34	Actor 823 834	these folks
+R10	Interact Arg1:T16 Arg2:T17	
+T35	OtherPolitical 1505 1517	that problem
+T36	Institution 1556 1559	HEW
+T37	Institution 1564 1586	the Defense Department
+T38	OtherPolitical 1602 1604	it
+R11	Support Arg1:T36 Arg2:T38	
+R12	Support Arg1:T37 Arg2:T38	
+T39	OtherPolitical 1656 1675	that responsibility

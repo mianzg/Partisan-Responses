@@ -1,0 +1,55 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 15 16	I
+T3	Implementation 23 38	comment on that
+R1	Oppose Arg1:T2 Arg2:T3	
+T4	Actor 40 41	I
+T5	Actor 55 58	you
+R2	Interact Arg1:T4 Arg2:T5	
+T6	Implementation 59 75	to read the book
+T7	Actor 81 84	you
+T8	Actor 149 162	Mr. President
+T9	Actor 1120 1121	I
+T10	Actor 1133 1145	Colonel Hunt
+T11	Actor 1090 1103	Mr. President
+R3	Interact Arg1:T9 Arg2:T10	
+T12	Actor 1109 1110	I
+T13	Actor 164 167	you
+T14	Implementation 178 206	to sign the unification bill
+R4	Support Arg1:T13 Arg2:T14	
+T15	Actor 211 224	Mr. President
+T16	Actor 274 275	I
+T17	Actor 978 991	Mr. President
+T18	Actor 993 994	I
+T19	Implementation 1010 1041	to clear up about those matches
+R5	Support Arg1:T18 Arg2:T19	
+T20	Actor 1047 1050	you
+T21	Actor 1073 1085	Colonel Hunt
+R6	Interact Arg1:T20 Arg2:T21	
+T22	OtherPolitical 101 114	the viewpoint
+R7	Achieve Arg1:T7 Arg2:T22	
+T23	Actor 132 133	I
+R8	Achieve Arg1:T23 Arg2:T22	
+T24	Actor 559 572	Mr. President
+T25	Actor 580 588	Mr. Ross
+T26	Actor 628 641	Mr. President
+T27	Actor 643 650	Charlie
+T28	Actor 679 692	Mr. President
+T29	Institution 704 721	the Statler Hotel
+T30	Actor 723 724	I
+T31	Implementation 226 246	the unification bill
+T32	Implementation 286 306	the unification bill
+T33	Implementation 326 346	the unification bill
+T34	Actor 408 409	I
+T35	Actor 423 424	I
+T36	OtherPolitical 444 446	it
+T37	Actor 471 479	Mr. Ross
+T38	Actor 487 500	Mr. President
+T39	Institution 537 554	the Statler Hotel
+T40	Actor 606 623	President Quirino
+T41	Actor 759 791	the President of the Philippines
+T42	Institution 803 820	the Statler Hotel
+T43	Institution 841 852	the Statler
+T44	Actor 874 876	we
+T45	Implementation 883 918	have the Statler at the White House
+R9	Oppose Arg1:T44 Arg2:T45	
+R10	Act Arg1:T35 Arg2:T36	

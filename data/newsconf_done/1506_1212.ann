@@ -1,0 +1,63 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 19 20	I
+T3	Actor 37 50	Mr. President
+T4	Actor 52 69	these postmasters
+T5	Actor 78 91	Mr. President
+T6	Actor 93 110	these postmasters
+T7	Actor 111 149	postmasters who were held up last year
+T8	Actor 185 198	Mr. President
+T9	Actor 211 224	Mr. President
+T10	Actor 226 243	these postmasters
+T11	Actor 298 311	Mr. President
+T12	Actor 313 330	these postmasters
+T13	Actor 1491 1492	I
+T14	Actor 1255 1268	Mr. President
+T15	OtherPolitical 420 436	the appointments
+T16	Attainment 350 374	expirations all the time
+T17	Actor 449 462	Mr. President
+T18	Actor 467 470	you
+T19	Implementation 478 508	to discuss the China situation
+R1	Support Arg1:T18 Arg2:T19	
+T20	Actor 520 546	Secretary of State Acheson
+T21	Actor 552 579	Senators Wherry and Bridges
+T22	Actor 581 594	Mr. President
+T23	Actor 599 603	they
+T24	Actor 630 631	I
+T25	Implementation 637 684	discuss they come in for that purpose with they
+R2	Support Arg1:T24 Arg2:T25	
+T26	Actor 694 707	Mr. President
+T27	Actor 809 822	Mr. President
+T28	Actor 712 715	you
+T29	Attainment 777 807	the Malik-Jessup conversations
+T30	OtherPolitical 735 746	the reports
+R3	Enable Arg1:T30 Arg2:T29	
+T31	Actor 747 750	you
+R4	Act Arg1:T31 Arg2:T30	
+T32	Institution 879 899	the State Department
+T33	OtherPolitical 1195 1227	the Department of State Bulletin
+T34	OtherPolitical 855 868	the statement
+R5	Support Arg1:T32 Arg2:T34	
+T35	Actor 912 913	I
+T36	OtherPolitical 920 922	it
+R6	Support Arg1:T35 Arg2:T36	
+T37	Implementation 941 974	The statement on the negotiations
+T38	Actor 983 999	Philip C. Jessup
+T39	Actor 1001 1029	American Ambassador-at-Large
+T40	Actor 1035 1049	Jacob A. Malik
+T41	Actor 1051 1090	Soviet Ambassador to the United Nations
+T42	Implementation 1110 1144	the lifting of the Berlin blockade
+T43	Actor 1452 1455	you
+T44	Actor 1467 1469	us
+T45	Actor 1476 1489	THE PRESIDENT
+T46	Institution 1317 1325	the Navy
+T47	Attainment 1288 1313	considerable apprehension
+R7	Achieve Arg1:T46 Arg2:T47	
+T48	Implementation 1337 1377	losing all the Navy air to the Air Force
+T49	Implementation 1388 1446	transfer of all Marine Corps air activity to the Air Force
+T50	Actor 1596 1610	the columnists
+T51	Actor 1635 1649	the columnists
+T52	Actor 1572 1575	you
+T53	OtherPolitical 1514 1560	any foundation in fact for either one of those
+R8	Oppose Arg1:T13 Arg2:T53	
+T54	OtherPolitical 1581 1593	those things
+R9	Act Arg1:T52 Arg2:T54	

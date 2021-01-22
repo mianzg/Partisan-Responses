@@ -1,0 +1,17 @@
+T1	Institution 372 378	Mexico
+T2	Institution 383 391	Columbia
+T3	Actor 0 13	THE PRESIDENT
+T4	Actor 302 315	THE PRESIDENT
+T5	Actor 53 73	Martin A. Hutchinson
+T6	Institution 77 85	Virginia
+T7	Institution 288 297	St. Louis
+T8	Actor 252 255	you
+T9	OtherPolitical 261 280	a very good meeting
+R1	Achieve Arg1:T8 Arg2:T9	
+T10	OtherPolitical 317 337	An excellent meeting
+T11	OtherPolitical 348 368	an excellent meeting
+T12	Actor 207 220	THE PRESIDENT
+T13	OtherPolitical 168 182	the nomination
+T14	Actor 148 158	The Senate
+R2	Oppose Arg1:T14 Arg2:T13	
+T15	Institution 118 146	the Federal Trade Commission

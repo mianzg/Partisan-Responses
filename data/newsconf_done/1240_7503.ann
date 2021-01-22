@@ -1,0 +1,23 @@
+T1	Actor 21 22	I
+T2	Actor 33 36	you
+T3	Actor 38 51	Mr. von Fremd
+R1	Interact Arg1:T1 Arg2:T2	
+R2	Interact Arg1:T1 Arg2:T3	
+T4	Actor 56 59	you
+T5	Actor 107 120	the Egyptians
+T6	OtherPolitical 128 137	the canal
+R3	Act Arg1:T5 Arg2:T6	
+T7	Actor 139 140	I
+T8	Actor 214 217	you
+T9	Attainment 272 293	some critical problem
+T10	Actor 315 316	I
+T11	Actor 349 350	I
+T12	Actor 366 367	I
+R4	Interact Arg1:T11 Arg2:T12	
+T13	Actor 397 398	I
+T14	Actor 423 426	you
+T15	Attainment 436 456	the faith in America
+T16	Actor 462 463	I
+R5	Achieve Arg1:T14 Arg2:T15	
+R6	Achieve Arg1:T16 Arg2:T15	
+T17	Actor 0 13	THE PRESIDENT

@@ -1,0 +1,20 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 21 23	I'
+T3	Actor 46 52	anyone
+T4	Actor 337 338	I
+T5	Attainment 350 367	a great readiness
+R1	Achieve Arg1:T4 Arg2:T5	
+T6	Actor 373 374	I
+T7	Actor 393 396	you
+T8	Actor 434 437	you
+T9	OtherPolitical 407 421	casual comment
+R2	Act Arg1:T7 Arg2:T9	
+T10	Actor 196 197	I
+T11	Actor 212 231	one of those people
+R3	Oppose Arg1:T10 Arg2:T11	
+T12	Implementation 265 297	getting people to take positions
+R4	Oppose Arg1:T11 Arg2:T12	
+T13	Actor 78 93	Admiral Strauss
+T14	Actor 143 155	someone else
+T15	Actor 161 168	someone
+T16	OtherPolitical 316 335	financial sacrifice

@@ -1,0 +1,25 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 25 26	I
+T3	Actor 40 41	I
+T4	Actor 109 110	I
+T5	Implementation 63 107	be informed of all of the ideas and feelings
+R1	Oppose Arg1:T3 Arg2:T5	
+T6	Implementation 117 152	to get in each of these individuals
+R2	Support Arg1:T4 Arg2:T6	
+T7	Actor 352 353	I
+T8	Implementation 407 456	to figure out every prejudice or slant or leaning
+T9	Implementation 360 398	go back into each of these men's minds
+R3	Oppose Arg1:T7 Arg2:T9	
+R4	Oppose Arg1:T7 Arg2:T8	
+T10	Actor 462 471	these men
+T11	Attainment 171 199	the basis of all the reports
+T12	Actor 217 219	me
+R5	Achieve Arg1:T12 Arg2:T11	
+T13	Actor 226 227	I
+T14	Actor 338 340	he
+T15	Actor 245 261	an honorable man
+R6	Support Arg1:T13 Arg2:T15	
+T16	Implementation 271 293	look facts in the face
+T17	Implementation 298 326	judge according to the facts
+R7	Support Arg1:T15 Arg2:T16	
+R8	Support Arg1:T15 Arg2:T17	

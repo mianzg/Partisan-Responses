@@ -1,0 +1,15 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 30 31	I
+T3	Actor 48 49	I
+T4	Actor 71 73	we
+T5	Implementation 78 139	devote we efforts to concrete and specific parts of a program
+R1	Interact Arg1:T2 Arg2:T3	
+R2	Support Arg1:T3 Arg2:T4	
+R3	Support Arg1:T4 Arg2:T5	
+T6	Attainment 195 224	a stronger and better America
+R4	Enable Arg1:T5 Arg2:T6	
+T7	Actor 145 146	I
+R5	Support Arg1:T7 Arg2:T5	
+T8	Actor 238 239	I
+T9	OtherPolitical 251 253	it
+R6	Act Arg1:T8 Arg2:T9	

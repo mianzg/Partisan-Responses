@@ -1,0 +1,34 @@
+T1	Actor 50 57	Charlie
+T2	Actor 60 68	Mr. Ross
+T3	Actor 0 13	THE PRESIDENT
+T4	Actor 94 107	THE PRESIDENT
+T5	Actor 109 110	I
+T6	Institution 213 233	the State Department
+T7	Actor 237 252	Charles G. Ross
+T8	Actor 254 279	Secretary toTHE PRESIDENT
+T9	Actor 290 303	Mr. President
+T10	Implementation 325 372	the sincere efforts to block the defense effort
+T11	Actor 314 317	you
+R1	Support Arg1:T11 Arg2:T10	
+T12	Actor 387 401	THE PRESIDENT.
+T13	OtherPolitical 408 410	it
+T14	Institution 458 470	the Congress
+T15	Actor 439 442	you
+T16	Actor 506 509	you
+T17	Actor 540 542	us
+T18	Attainment 547 566	terrific opposition
+R2	Achieve Arg1:T17 Arg2:T18	
+T19	Actor 608 621	Mr. President
+T20	Actor 643 646	you
+T21	Implementation 663 680	enforcing the law
+R3	Support Arg1:T20 Arg2:T21	
+T22	Implementation 738 793	spending money that the Congress has given you to spend
+T23	Implementation 716 733	enforcing the law
+T24	Actor 685 688	you
+R4	Act Arg1:T24 Arg2:T23	
+R5	Act Arg1:T24 Arg2:T22	
+T25	Actor 798 811	THE PRESIDENT
+T26	Actor 845 853	Miss May
+T27	Institution 875 908	the Portland (Maine) Press Herald
+T28	Actor 857 861;862 871	Mrs. May Craig
+T29	Actor 827 830	you

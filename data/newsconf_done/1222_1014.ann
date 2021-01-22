@@ -1,0 +1,4 @@
+T1	Actor 0 13	THE PRESIDENT
+T2	Actor 53 55	me
+T3	Implementation 56 85	to see any great relationship
+R1	Oppose Arg1:T2 Arg2:T3	
